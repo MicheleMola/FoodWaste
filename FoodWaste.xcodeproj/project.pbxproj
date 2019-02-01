@@ -12,6 +12,9 @@
 		DEF10A272204A7B700C594CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A252204A7B700C594CD /* Main.storyboard */; };
 		DEF10A292204A7B800C594CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A282204A7B800C594CD /* Assets.xcassets */; };
 		DEF10A2C2204A7B800C594CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A2A2204A7B800C594CD /* LaunchScreen.storyboard */; };
+		DEF10A3B2204AC7800C594CD /* PantryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A3A2204AC7800C594CD /* PantryStoryboard.storyboard */; };
+		DEF10A3E2204AC9600C594CD /* ShoppingListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A3D2204AC9600C594CD /* ShoppingListStoryboard.storyboard */; };
+		DEF10A402204AD5B00C594CD /* RecipesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A3F2204AD5B00C594CD /* RecipesStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		DEF10A282204A7B800C594CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEF10A2B2204A7B800C594CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEF10A2D2204A7B800C594CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEF10A3A2204AC7800C594CD /* PantryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PantryStoryboard.storyboard; sourceTree = "<group>"; };
+		DEF10A3D2204AC9600C594CD /* ShoppingListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShoppingListStoryboard.storyboard; sourceTree = "<group>"; };
+		DEF10A3F2204AD5B00C594CD /* RecipesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipesStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 		DEF10A202204A7B700C594CD /* FoodWaste */ = {
 			isa = PBXGroup;
 			children = (
+				DEF10A352204AC0B00C594CD /* ShoppingList */,
+				DEF10A342204ABFE00C594CD /* Pantry */,
+				DEF10A332204ABDD00C594CD /* Recipes */,
 				DEF10A212204A7B700C594CD /* AppDelegate.swift */,
 				DEF10A232204A7B700C594CD /* ViewController.swift */,
 				DEF10A252204A7B700C594CD /* Main.storyboard */,
@@ -62,6 +71,54 @@
 				DEF10A2D2204A7B800C594CD /* Info.plist */,
 			);
 			path = FoodWaste;
+			sourceTree = "<group>";
+		};
+		DEF10A332204ABDD00C594CD /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				DEF10A362204AC2F00C594CD /* Views */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		DEF10A342204ABFE00C594CD /* Pantry */ = {
+			isa = PBXGroup;
+			children = (
+				DEF10A392204AC6000C594CD /* Views */,
+			);
+			path = Pantry;
+			sourceTree = "<group>";
+		};
+		DEF10A352204AC0B00C594CD /* ShoppingList */ = {
+			isa = PBXGroup;
+			children = (
+				DEF10A3C2204AC7F00C594CD /* Views */,
+			);
+			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		DEF10A362204AC2F00C594CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEF10A3F2204AD5B00C594CD /* RecipesStoryboard.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEF10A392204AC6000C594CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEF10A3A2204AC7800C594CD /* PantryStoryboard.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DEF10A3C2204AC7F00C594CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEF10A3D2204AC9600C594CD /* ShoppingListStoryboard.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEF10A2C2204A7B800C594CD /* LaunchScreen.storyboard in Resources */,
+				DEF10A3E2204AC9600C594CD /* ShoppingListStoryboard.storyboard in Resources */,
 				DEF10A292204A7B800C594CD /* Assets.xcassets in Resources */,
 				DEF10A272204A7B700C594CD /* Main.storyboard in Resources */,
+				DEF10A3B2204AC7800C594CD /* PantryStoryboard.storyboard in Resources */,
+				DEF10A402204AD5B00C594CD /* RecipesStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
