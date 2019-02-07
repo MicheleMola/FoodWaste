@@ -162,7 +162,7 @@
         <!--Add Food-->
         <scene sceneID="Xbf-rh-CJ7">
             <objects>
-                <tableViewController id="T65-fJ-e2U" customClass="addFoodViewController" customModule="FoodWaste" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="T65-fJ-e2U" customClass="AddFoodViewController" customModule="FoodWaste" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="static" style="plain" rowHeight="110" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Ic-1k-QaE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,13 +196,13 @@
                                                     </connections>
                                                 </textField>
                                                 <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yeN-R4-8gE">
-                                                    <rect key="frame" x="299" y="38" width="95" height="29"/>
+                                                    <rect key="frame" x="314" y="38" width="80" height="29"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="95" id="CtL-aM-Afy"/>
+                                                        <constraint firstAttribute="width" constant="80" id="CtL-aM-Afy"/>
                                                     </constraints>
                                                     <segments>
-                                                        <segment title="pieces"/>
-                                                        <segment title="grams"/>
+                                                        <segment title="pcs"/>
+                                                        <segment title="g"/>
                                                     </segments>
                                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </segmentedControl>
@@ -271,8 +271,11 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="146.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expiration Day" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="J8z-iC-3g7">
-                                                    <rect key="frame" x="129.5" y="51" width="129.5" height="45"/>
+                                                <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Expiration Date" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="J8z-iC-3g7">
+                                                    <rect key="frame" x="130" y="51" width="173" height="45"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="173" id="Ngi-ox-qgv"/>
+                                                    </constraints>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <textInputTraits key="textInputTraits" spellCheckingType="yes" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
@@ -283,7 +286,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4w-T1-YNw">
                                                     <rect key="frame" x="20" y="49" width="86.5" height="48"/>
                                                     <string key="text">Expiration
-Day</string>
+Date</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -310,7 +313,7 @@ Day</string>
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="356.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm listening, please say quantity, name and dd/mm/yyyy" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3m-MU-gus">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I'm listening, example: 3 bananas December 3, 2020" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g3m-MU-gus">
                                                     <rect key="frame" x="20" y="11" width="374" height="41"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="41" id="L4f-mN-wLF"/>
@@ -365,7 +368,7 @@ Day</string>
                                 <action selector="cancelButton:" destination="T65-fJ-e2U" id="k65-Ln-JkA"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Done" id="Dbm-uq-4ph">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Dbm-uq-4ph">
                             <connections>
                                 <action selector="doneButton:" destination="T65-fJ-e2U" id="BYR-Sa-Xqx"/>
                             </connections>
