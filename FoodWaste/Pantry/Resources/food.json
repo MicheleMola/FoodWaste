@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Pennette",
+    "expiration": "2 days left",
+    "quantity": "1 pc",
+    "image": "Pennette"
+  },
+  {
+    "name": "Sausage",
+    "expiration": "2 days left",
+    "quantity": "1 pc",
+    "image": "Salsiccia"
+  },
+  {
+    "name": "Meat",
+    "expiration": "2 days left",
+    "quantity": "1 pc",
+    "image": "Carne"
+  },
+  {
+    "name": "Salmon",
+    "expiration": "2 days left",
+    "quantity": "1 pc",
+    "image": "Salmone"
+  },
+  {
+    "name": "Champagne",
+    "expiration": "2 days left",
+    "quantity": "1 pc",
+    "image": "Spumante"
+  },
+  {
+    "name": "Piadina",
+    "expiration": "2 days left",
+    "quantity": "1 pc",
+    "image": "Piadina"
+  },
+  {
+    "name": "Spices",
+    "expiration": "2 days left",
+    "quantity": "3 pcs",
+    "image": "Spezie"
+  },
+  {
+    "name": "Bread",
+    "expiration": "2 days left",
+    "quantity": "1 pc",
+    "image": "Pane"
+  },
+  {
+    "name": "Pasta",
+    "expiration": "2 days left",
+    "quantity": "1 pc",
+    "image": "Pasta"
+  },
+  {
+    "name": "Pizza",
+    "expiration": "2 days left",
+    "quantity": "1 pc",
+    "image": "Pizza"
+  }
+]
