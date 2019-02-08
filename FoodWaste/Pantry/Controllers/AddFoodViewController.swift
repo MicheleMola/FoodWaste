@@ -182,27 +182,21 @@ class AddFoodViewController: UITableViewController, UITextFieldDelegate {
   
   func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
     
-    var result = false
+    var maxLength: Int
+    var newString: NSString
+    
     if textField == quantityTextField {
-      let maxLength = 6
+      maxLength = 6
       let currentString: NSString = quantityTextField.text! as NSString
-      let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
-  
-      let disallowedCharacterSet = NSCharacterSet(charactersIn: "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz?!@:;-+").inverted
-      
-      if string.rangeOfCharacter(from: disallowedCharacterSet) != nil && newString.length <= maxLength {
-        result = true
-      }
+      newString = currentString.replacingCharacters(in: range, with: string) as NSString
     }
     else {
-      let maxLength = 20
+      maxLength = 20
       let currentString: NSString = nameTextField.text! as NSString
-      let newString: NSString = currentString.replacingCharacters(in: range, with: string) as NSString
-      
-      result = newString.length <= maxLength
+      newString = currentString.replacingCharacters(in: range, with: string) as NSString
     }
     
-    return result
+    return newString.length <= maxLength
   }
   
   func hideKeyboardWhenTappedAround() {
