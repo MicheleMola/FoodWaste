@@ -15,7 +15,8 @@ class RecipeDetailViewController: UITableViewController {
     @IBOutlet weak var detailRecipeImage: UIImageView!
     @IBOutlet weak var detailRecipeName: UILabel!
     @IBOutlet weak var detailRecipeDescription: UILabel!
-
+    @IBOutlet weak var ingredientList: UITableView!
+    
     var roundButton: UIButton!
     var recipe: Recipe?
 
@@ -102,6 +103,9 @@ class RecipeDetailViewController: UITableViewController {
     
 
 }
+
+
+
 
 
 

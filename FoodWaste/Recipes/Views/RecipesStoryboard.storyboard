@@ -267,6 +267,43 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wkx-kX-jkw" id="eHN-1u-3v7">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Lp-he-vL6">
+                                                    <rect key="frame" x="16" y="0.0" width="382" height="130"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <prototypes>
+                                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="kqR-nA-Zkc" customClass="IngredientListTableViewCell" customModule="FoodWaste" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="28" width="382" height="44"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kqR-nA-Zkc" id="wIk-xF-jxS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="43.5"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTG-o4-h4V">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                                <constraints>
+                                                                    <constraint firstItem="NTG-o4-h4V" firstAttribute="top" secondItem="wIk-xF-jxS" secondAttribute="top" id="9oQ-60-3Kj"/>
+                                                                    <constraint firstItem="NTG-o4-h4V" firstAttribute="leading" secondItem="wIk-xF-jxS" secondAttribute="leading" id="sZD-f0-GiM"/>
+                                                                </constraints>
+                                                            </tableViewCellContentView>
+                                                            <connections>
+                                                                <outlet property="ingredient" destination="NTG-o4-h4V" id="zg0-UM-Gph"/>
+                                                            </connections>
+                                                        </tableViewCell>
+                                                    </prototypes>
+                                                </tableView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="9Lp-he-vL6" firstAttribute="leading" secondItem="eHN-1u-3v7" secondAttribute="leading" constant="16" id="8b9-dK-yU2"/>
+                                                <constraint firstAttribute="trailing" secondItem="9Lp-he-vL6" secondAttribute="trailing" constant="16" id="BFZ-DR-SBF"/>
+                                                <constraint firstAttribute="bottom" secondItem="9Lp-he-vL6" secondAttribute="bottom" id="L1O-3a-qmu"/>
+                                                <constraint firstItem="9Lp-he-vL6" firstAttribute="top" secondItem="eHN-1u-3v7" secondAttribute="top" id="SLi-cP-HHb"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" id="PPO-kk-ebZ">
@@ -324,6 +361,7 @@
                         <outlet property="detailRecipeDescription" destination="IJV-sE-Aw0" id="Nos-5P-lfB"/>
                         <outlet property="detailRecipeImage" destination="zRv-oG-T8X" id="6IF-BA-0Eo"/>
                         <outlet property="detailRecipeName" destination="la6-zI-mun" id="AV9-0L-1oo"/>
+                        <outlet property="ingredientList" destination="9Lp-he-vL6" id="3Ke-Qc-tkv"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UBz-dE-V32" userLabel="First Responder" sceneMemberID="firstResponder"/>
