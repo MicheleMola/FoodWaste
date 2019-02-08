@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		173577AD22075A6D00F28872 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173577AC22075A6D00F28872 /* Recipe.swift */; };
 		173577AF22075D9B00F28872 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 173577AE22075D9B00F28872 /* Recipes.json */; };
 		173577B122075E1800F28872 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173577B022075E1800F28872 /* Food.swift */; };
 		173577B4220760C500F28872 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173577B3220760C500F28872 /* Utilities.swift */; };
@@ -15,6 +14,7 @@
 		173577B82207648000F28872 /* RecipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173577B72207648000F28872 /* RecipeCollectionViewCell.swift */; };
 		173577BA220764A400F28872 /* ExpiringFoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173577B9220764A400F28872 /* ExpiringFoodTableViewCell.swift */; };
 		173577BE2207968100F28872 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173577BD2207968100F28872 /* RecipeDetailViewController.swift */; };
+		174A93C0220DCEC8003047BA /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A93BF220DCEC8003047BA /* Recipe.swift */; };
 		DEF10A222204A7B700C594CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF10A212204A7B700C594CD /* AppDelegate.swift */; };
 		DEF10A242204A7B700C594CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF10A232204A7B700C594CD /* ViewController.swift */; };
 		DEF10A272204A7B700C594CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A252204A7B700C594CD /* Main.storyboard */; };
@@ -26,7 +26,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		173577AC22075A6D00F28872 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		173577AE22075D9B00F28872 /* Recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
 		173577B022075E1800F28872 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		173577B3220760C500F28872 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -34,6 +33,7 @@
 		173577B72207648000F28872 /* RecipeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCollectionViewCell.swift; sourceTree = "<group>"; };
 		173577B9220764A400F28872 /* ExpiringFoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiringFoodTableViewCell.swift; sourceTree = "<group>"; };
 		173577BD2207968100F28872 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		174A93BF220DCEC8003047BA /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		DEF10A1E2204A7B700C594CD /* FoodWaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodWaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF10A212204A7B700C594CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DEF10A232204A7B700C594CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,8 +68,8 @@
 		173577AA22075A4700F28872 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				173577AC22075A6D00F28872 /* Recipe.swift */,
 				173577B022075E1800F28872 /* Food.swift */,
+				174A93BF220DCEC8003047BA /* Recipe.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -252,13 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				173577AD22075A6D00F28872 /* Recipe.swift in Sources */,
 				173577BE2207968100F28872 /* RecipeDetailViewController.swift in Sources */,
 				173577B122075E1800F28872 /* Food.swift in Sources */,
 				DEF10A242204A7B700C594CD /* ViewController.swift in Sources */,
 				173577BA220764A400F28872 /* ExpiringFoodTableViewCell.swift in Sources */,
 				173577B4220760C500F28872 /* Utilities.swift in Sources */,
 				173577B82207648000F28872 /* RecipeCollectionViewCell.swift in Sources */,
+				174A93C0220DCEC8003047BA /* Recipe.swift in Sources */,
 				173577B62207610600F28872 /* RecipesViewController.swift in Sources */,
 				DEF10A222204A7B700C594CD /* AppDelegate.swift in Sources */,
 			);
