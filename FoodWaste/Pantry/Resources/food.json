@@ -3,60 +3,70 @@
     "name": "Pennette",
     "expiration": "2 days left",
     "quantity": "1 pc",
-    "image": "Pennette"
+    "image": "Pennette",
+    "_description": "gigi"
   },
   {
     "name": "Sausage",
     "expiration": "2 days left",
     "quantity": "1 pc",
-    "image": "Salsiccia"
+    "image": "Salsiccia",
+    "_description": "gigi"
   },
   {
     "name": "Meat",
     "expiration": "2 days left",
     "quantity": "1 pc",
-    "image": "Carne"
+    "image": "Carne",
+    "_description": "gigi"
   },
   {
     "name": "Salmon",
     "expiration": "2 days left",
     "quantity": "1 pc",
-    "image": "Salmone"
+    "image": "Salmone",
+    "_description": "gigi"
   },
   {
     "name": "Champagne",
     "expiration": "2 days left",
     "quantity": "1 pc",
-    "image": "Spumante"
+    "image": "Spumante",
+    "_description": "gigi"
   },
   {
     "name": "Piadina",
     "expiration": "2 days left",
     "quantity": "1 pc",
-    "image": "Piadina"
+    "image": "Piadina",
+    "_description": "gigi"
   },
   {
     "name": "Spices",
     "expiration": "2 days left",
     "quantity": "3 pcs",
-    "image": "Spezie"
+    "image": "Spezie",
+    "_description": "gigi"
   },
   {
     "name": "Bread",
     "expiration": "2 days left",
     "quantity": "1 pc",
-    "image": "Pane"
+    "image": "Pane",
+    "_description": "gigi"
   },
   {
     "name": "Pasta",
     "expiration": "2 days left",
     "quantity": "1 pc",
-    "image": "Pasta"
+    "image": "Pasta",
+    "_description": "gigi"
   },
   {
     "name": "Pizza",
     "expiration": "2 days left",
     "quantity": "1 pc",
-    "image": "Pizza"
+    "image": "Pizza",
+    "_description": "gigi"
   }
 ]
