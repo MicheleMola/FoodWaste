@@ -13,6 +13,7 @@ import NaturalLanguage
 
 class AddFoodViewController: UITableViewController, UITextFieldDelegate {
   
+  private let currentDate = NSDate()  //get the current date
   private var datePicker: UIDatePicker?
   var newFood: Food?
   var pulseIsEnabled: Bool = false
@@ -157,7 +158,6 @@ class AddFoodViewController: UITableViewController, UITextFieldDelegate {
   func createDatePicker() {
     datePicker = UIDatePicker()
     datePicker?.datePickerMode = .date
-    let currentDate = NSDate()  //get the current date
     datePicker?.minimumDate = currentDate as Date  //set the current date/time as a minimum
     datePicker?.date = currentDate as Date
     //maximum time = current time + 120 month

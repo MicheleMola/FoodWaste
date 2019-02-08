@@ -16,6 +16,7 @@ class FoodCollectionViewController: UICollectionViewController {
   private let sectionInsets = UIEdgeInsets(top: 16.0, left: 16.0, bottom: 16.0, right: 16.0)
   var collectionTest: [Food] = []
   
+  
   @IBOutlet var foodCollectionView: UICollectionView!
 
   override func viewDidLoad() {
