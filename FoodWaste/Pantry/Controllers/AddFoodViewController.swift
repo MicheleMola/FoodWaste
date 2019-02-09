@@ -17,6 +17,7 @@ class AddFoodViewController: UITableViewController, UITextFieldDelegate {
   private var datePicker: UIDatePicker?
   var newFood: Food?
   var pulseIsEnabled: Bool = false
+
   
   @IBOutlet weak var doneButton: UIBarButtonItem!
   @IBOutlet weak var nameTextField: UITextField!
@@ -44,6 +45,7 @@ class AddFoodViewController: UITableViewController, UITextFieldDelegate {
   
   @IBAction func doneButton(_ sender: Any) {
     //Da implementare funzione che salva ciò che viene scritto in newFood
+
     
     // Create Food object to save
     let unit = quantitySegmentedControl.titleForSegment(at: quantitySegmentedControl.selectedSegmentIndex)

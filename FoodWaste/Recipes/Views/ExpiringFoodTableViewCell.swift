@@ -47,7 +47,12 @@ class ExpiringFoodTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
+        self.shadowView.layer.cornerRadius = 8
+        self.shadowView.layer.masksToBounds = false
+        self.shadowView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        self.shadowView.layer.shadowColor = UIColor.black.cgColor
+        self.shadowView.layer.shadowOpacity = 0.1
+        self.shadowView.layer.shadowRadius = 4
     }
 
     

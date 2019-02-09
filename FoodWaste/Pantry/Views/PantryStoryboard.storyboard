@@ -50,20 +50,20 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vm5-9M-hvu" userLabel="nameLabel">
-                                            <rect key="frame" x="8" y="124" width="116" height="24"/>
-                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                            <rect key="frame" x="8" y="124" width="44" height="24"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 days left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rig-Or-iTq" userLabel="expirationLabel">
-                                            <rect key="frame" x="8" y="145" width="75" height="15"/>
+                                            <rect key="frame" x="8" y="145" width="81" height="17"/>
                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJu-kJ-eOZ" userLabel="quantityLabel">
                                             <rect key="frame" x="132" y="145" width="31" height="15"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -72,16 +72,15 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="9Lc-Xf-DiH" secondAttribute="trailing" id="9fC-td-5B2"/>
                                     <constraint firstAttribute="trailing" secondItem="SJu-kJ-eOZ" secondAttribute="trailing" constant="7" id="EkJ-hL-Jba"/>
-                                    <constraint firstAttribute="trailing" secondItem="rig-Or-iTq" secondAttribute="trailing" constant="87" id="GhM-S3-U1q"/>
+                                    <constraint firstAttribute="trailing" secondItem="rig-Or-iTq" secondAttribute="trailing" constant="81" id="GhM-S3-U1q"/>
                                     <constraint firstItem="rig-Or-iTq" firstAttribute="leading" secondItem="Q1U-IN-VAK" secondAttribute="leading" constant="8" id="J2w-jU-W2F"/>
                                     <constraint firstItem="Vm5-9M-hvu" firstAttribute="top" secondItem="Q1U-IN-VAK" secondAttribute="top" constant="124" id="KoP-Vf-eUc"/>
                                     <constraint firstItem="Vm5-9M-hvu" firstAttribute="leading" secondItem="Q1U-IN-VAK" secondAttribute="leading" constant="8" id="Mfn-Y6-gx1"/>
                                     <constraint firstItem="XRC-pf-CDR" firstAttribute="leading" secondItem="Q1U-IN-VAK" secondAttribute="leading" id="Opo-K3-Yxy"/>
                                     <constraint firstAttribute="bottom" secondItem="XRC-pf-CDR" secondAttribute="bottom" id="Pjz-7o-SfF"/>
-                                    <constraint firstAttribute="bottom" secondItem="rig-Or-iTq" secondAttribute="bottom" constant="10" id="VLT-vT-kAy"/>
+                                    <constraint firstAttribute="bottom" secondItem="rig-Or-iTq" secondAttribute="bottom" constant="8" id="VLT-vT-kAy"/>
                                     <constraint firstItem="SJu-kJ-eOZ" firstAttribute="leading" secondItem="Q1U-IN-VAK" secondAttribute="leading" constant="132" id="Ycz-Dg-2ib"/>
                                     <constraint firstItem="9Lc-Xf-DiH" firstAttribute="leading" secondItem="Q1U-IN-VAK" secondAttribute="leading" id="Ye4-hw-xhc"/>
-                                    <constraint firstAttribute="trailing" secondItem="Vm5-9M-hvu" secondAttribute="trailing" constant="46" id="dGT-Gk-1uw"/>
                                     <constraint firstItem="SJu-kJ-eOZ" firstAttribute="top" secondItem="Q1U-IN-VAK" secondAttribute="top" constant="145" id="im4-TV-jch"/>
                                     <constraint firstAttribute="trailing" secondItem="XRC-pf-CDR" secondAttribute="trailing" id="kkY-dl-lX9"/>
                                     <constraint firstAttribute="bottom" secondItem="SJu-kJ-eOZ" secondAttribute="bottom" constant="10" id="nOh-od-Ldx"/>

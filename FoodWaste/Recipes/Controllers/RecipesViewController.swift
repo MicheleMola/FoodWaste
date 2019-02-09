@@ -32,6 +32,7 @@ class RecipesViewController: UIViewController {
         recipesCollectionView?.delegate = self
         expirationDatesTableView?.dataSource = self
         expirationDatesTableView.separatorStyle = .none
+
         
         self.getRecipes()
         
