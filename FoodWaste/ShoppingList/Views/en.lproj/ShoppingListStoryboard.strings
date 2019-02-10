@@ -1,0 +1,45 @@
+
+/* Class = "UINavigationItem"; title = "Shopping List"; ObjectID = "0Vj-7H-dcz"; */
+"0Vj-7H-dcz.title" = "Shopping List";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "0WB-Ed-pTe"; */
+"0WB-Ed-pTe.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "LB"; ObjectID = "6cz-uH-sTk"; */
+"6cz-uH-sTk.text" = "LB";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9b7-LJ-dRd"; */
+"9b7-LJ-dRd.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Add Food"; ObjectID = "Hi5-kq-PfH"; */
+"Hi5-kq-PfH.title" = "Add Food";
+
+/* Class = "UITabBarItem"; title = "Shopping List"; ObjectID = "HtE-Ue-KVj"; */
+"HtE-Ue-KVj.title" = "Shopping List";
+
+/* Class = "UILabel"; text = "Quantity"; ObjectID = "PFb-a8-sWT"; */
+"PFb-a8-sWT.text" = "Quantity";
+
+/* Class = "UISegmentedControl"; aDh-a7-5fK.segmentTitles[0] = "pcs"; ObjectID = "aDh-a7-5fK"; */
+"aDh-a7-5fK.segmentTitles[0]" = "pcs";
+
+/* Class = "UISegmentedControl"; aDh-a7-5fK.segmentTitles[1] = "g"; ObjectID = "aDh-a7-5fK"; */
+"aDh-a7-5fK.segmentTitles[1]" = "g";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "aEz-A7-zn5"; */
+"aEz-A7-zn5.title" = "Cancel";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "ewi-Zl-zWX"; */
+"ewi-Zl-zWX.text" = "Name";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "nNS-sU-tKC"; */
+"nNS-sU-tKC.placeholder" = "Name";
+
+/* Class = "UILabel"; text = "I'm listening, example: 3 bananas"; ObjectID = "qyy-Wo-jR5"; */
+"qyy-Wo-jR5.text" = "I'm listening, example: 3 bananas";
+
+/* Class = "UITextField"; placeholder = "Quantity"; ObjectID = "tgR-So-4WV"; */
+"tgR-So-4WV.placeholder" = "Quantity";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wIY-mb-6hx"; */
+"wIY-mb-6hx.text" = "Label";

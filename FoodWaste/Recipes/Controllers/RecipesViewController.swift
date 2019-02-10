@@ -10,20 +10,30 @@ import Foundation
 import UIKit
 
 class RecipesViewController: UIViewController {
-    
+  
+  let language = Locale.current.languageCode
+  
     // Created two IBOutlets to control the UICollectionView and UITableView
     @IBOutlet weak var recipesCollectionView: UICollectionView!
     @IBOutlet weak var expirationDatesTableView: UITableView!
 
     //initializing two variables. The first one is recipes, of type RECIPE, initialized as an empty Array and the second one is expiringFood where we access the method fetchFood() that will return an array of food.
     var recipes: [Recipe] = []
-    var expiringFood = Food.fetchFood()
+  var expiringEnglishFood = Food.fetchEnglishFood()
+  var expiringItalianFood = Food.fetchItalianFood()
     
-    func getRecipes() {
-        if let recipes: [Recipe] = loadJson(filename: "Recipes") {
-            self.recipes = recipes
-        }
+  func getRecipes() {
+    var filename = "recipes"
+    
+    switch language {
+    case "it": filename = "ricette"
+    default: break
     }
+    
+    if let recipes: [Recipe] = loadJson(filename: filename) {
+      self.recipes = recipes
+    }
+  }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,6 +66,8 @@ extension RecipesViewController: UICollectionViewDataSource, UICollectionViewDel
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecipeCell", for: indexPath) as! RecipeCollectionViewCell
         cell.suggestedRecipeName.text = recipes[indexPath.row].recipeName
         cell.suggestedRecipeImage.image = UIImage(named: recipes[indexPath.row].recipeImage)
+      cell.isAccessibilityElement = true
+      cell.accessibilityLabel = recipes[indexPath.row].recipeName
         return  cell
     }
     
@@ -86,14 +98,22 @@ extension RecipesViewController: UICollectionViewDelegateFlowLayout {
 // takes care of tableview
 extension RecipesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return expiringFood.count
+      if language == "it" {
+        return expiringEnglishFood.count
+      } else {
+        return expiringEnglishFood.count
+      }
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = expirationDatesTableView.dequeueReusableCell(withIdentifier: "ExpiringFoodCell") as! ExpiringFoodTableViewCell
-        cell.foodExipiring = expiringFood[indexPath.row]
-        return cell
+      let cell = expirationDatesTableView.dequeueReusableCell(withIdentifier: "ExpiringFoodCell") as! ExpiringFoodTableViewCell
+      if language == "it" {
+        cell.foodExipiring = expiringItalianFood[indexPath.row]
+      } else {
+        cell.foodExipiring = expiringEnglishFood[indexPath.row]
+      }
+      return cell
     }
     
 }

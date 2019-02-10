@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		173577AF22075D9B00F28872 /* Recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 173577AE22075D9B00F28872 /* Recipes.json */; };
 		173577B62207610600F28872 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173577B52207610600F28872 /* RecipesViewController.swift */; };
 		173577B82207648000F28872 /* RecipeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173577B72207648000F28872 /* RecipeCollectionViewCell.swift */; };
 		173577BA220764A400F28872 /* ExpiringFoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173577B9220764A400F28872 /* ExpiringFoodTableViewCell.swift */; };
@@ -27,8 +26,16 @@
 		5D1312CC2205A95400483414 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1312CB2205A95400483414 /* MyCollectionViewCell.swift */; };
 		5D134BA0220DBC1200E8373B /* FoodCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D134B9F220DBC1200E8373B /* FoodCollectionViewController.swift */; };
 		5D22D2B42207058F00B20A88 /* AddFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D22D2B32207058F00B20A88 /* AddFoodViewController.swift */; };
+		5D42377122107CCC00AFFFAE /* ShoppingListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D42377322107CCC00AFFFAE /* ShoppingListStoryboard.storyboard */; };
+		5D42377A22107D3C00AFFFAE /* addShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42377922107D3C00AFFFAE /* addShoppingListViewController.swift */; };
+		5D42377D22107E6B00AFFFAE /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D42377B22107E6B00AFFFAE /* recipes.json */; };
+		5D42377E22107E6B00AFFFAE /* ricette.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D42377C22107E6B00AFFFAE /* ricette.json */; };
+		5D42377F22107E7900AFFFAE /* RecipesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D42378122107E7900AFFFAE /* RecipesStoryboard.storyboard */; };
+		5D42378422107ED600AFFFAE /* PantryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D42378622107ED600AFFFAE /* PantryStoryboard.storyboard */; };
+		5D42378922107EF200AFFFAE /* food.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D42378722107EF200AFFFAE /* food.json */; };
+		5D42378A22107EF200AFFFAE /* cibo.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D42378822107EF200AFFFAE /* cibo.json */; };
+		5D42378E22107F8100AFFFAE /* EditPantryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42378D22107F8100AFFFAE /* EditPantryViewController.swift */; };
 		5D9D5E2D2206EBCF00DF25C2 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9D5E2C2206EBCF00DF25C2 /* Utilities.swift */; };
-		5D9D5E302206EC1300DF25C2 /* food.json in Resources */ = {isa = PBXBuildFile; fileRef = 5D9D5E2F2206EC1300DF25C2 /* food.json */; };
 		5DA1C0C7220AE45400DD2B45 /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA1C0C6220AE45400DD2B45 /* Pulsing.swift */; };
 		5DA1C0C9220B027F00DD2B45 /* UIView+Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA1C0C8220B027F00DD2B45 /* UIView+Circle.swift */; };
 		DEF10A222204A7B700C594CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF10A212204A7B700C594CD /* AppDelegate.swift */; };
@@ -36,13 +43,9 @@
 		DEF10A272204A7B700C594CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A252204A7B700C594CD /* Main.storyboard */; };
 		DEF10A292204A7B800C594CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A282204A7B800C594CD /* Assets.xcassets */; };
 		DEF10A2C2204A7B800C594CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A2A2204A7B800C594CD /* LaunchScreen.storyboard */; };
-		DEF10A3B2204AC7800C594CD /* PantryStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A3A2204AC7800C594CD /* PantryStoryboard.storyboard */; };
-		DEF10A3E2204AC9600C594CD /* ShoppingListStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A3D2204AC9600C594CD /* ShoppingListStoryboard.storyboard */; };
-		DEF10A402204AD5B00C594CD /* RecipesStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A3F2204AD5B00C594CD /* RecipesStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		173577AE22075D9B00F28872 /* Recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Recipes.json; sourceTree = "<group>"; };
 		173577B52207610600F28872 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
 		173577B72207648000F28872 /* RecipeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCollectionViewCell.swift; sourceTree = "<group>"; };
 		173577B9220764A400F28872 /* ExpiringFoodTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpiringFoodTableViewCell.swift; sourceTree = "<group>"; };
@@ -62,8 +65,21 @@
 		5D1312CB2205A95400483414 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		5D134B9F220DBC1200E8373B /* FoodCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCollectionViewController.swift; sourceTree = "<group>"; };
 		5D22D2B32207058F00B20A88 /* AddFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodViewController.swift; sourceTree = "<group>"; };
+		5D42377222107CCC00AFFFAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/ShoppingListStoryboard.storyboard; sourceTree = "<group>"; };
+		5D42377622107CE200AFFFAE /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Main.strings; sourceTree = "<group>"; };
+		5D42377722107CE200AFFFAE /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5D42377822107CE200AFFFAE /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/ShoppingListStoryboard.strings; sourceTree = "<group>"; };
+		5D42377922107D3C00AFFFAE /* addShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addShoppingListViewController.swift; sourceTree = "<group>"; };
+		5D42377B22107E6B00AFFFAE /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		5D42377C22107E6B00AFFFAE /* ricette.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ricette.json; sourceTree = "<group>"; };
+		5D42378022107E7900AFFFAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/RecipesStoryboard.storyboard; sourceTree = "<group>"; };
+		5D42378322107E7B00AFFFAE /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/RecipesStoryboard.strings; sourceTree = "<group>"; };
+		5D42378522107ED600AFFFAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/PantryStoryboard.storyboard; sourceTree = "<group>"; };
+		5D42378722107EF200AFFFAE /* food.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = food.json; sourceTree = "<group>"; };
+		5D42378822107EF200AFFFAE /* cibo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cibo.json; sourceTree = "<group>"; };
+		5D42378C22107F4C00AFFFAE /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/PantryStoryboard.strings; sourceTree = "<group>"; };
+		5D42378D22107F8100AFFFAE /* EditPantryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditPantryViewController.swift; sourceTree = "<group>"; };
 		5D9D5E2C2206EBCF00DF25C2 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
-		5D9D5E2F2206EC1300DF25C2 /* food.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = food.json; sourceTree = "<group>"; };
 		5DA1C0C6220AE45400DD2B45 /* Pulsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pulsing.swift; sourceTree = "<group>"; };
 		5DA1C0C8220B027F00DD2B45 /* UIView+Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Circle.swift"; sourceTree = "<group>"; };
 		DEF10A1E2204A7B700C594CD /* FoodWaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodWaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,9 +89,6 @@
 		DEF10A282204A7B800C594CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEF10A2B2204A7B800C594CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEF10A2D2204A7B800C594CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DEF10A3A2204AC7800C594CD /* PantryStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PantryStoryboard.storyboard; sourceTree = "<group>"; };
-		DEF10A3D2204AC9600C594CD /* ShoppingListStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShoppingListStoryboard.storyboard; sourceTree = "<group>"; };
-		DEF10A3F2204AD5B00C594CD /* RecipesStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecipesStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +105,8 @@
 		173577A922075A3300F28872 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				173577AE22075D9B00F28872 /* Recipes.json */,
+				5D42377B22107E6B00AFFFAE /* recipes.json */,
+				5D42377C22107E6B00AFFFAE /* ricette.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -118,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				4D050DD122058CB300FEE70C /* ShoppingListViewController.swift */,
+				5D42377922107D3C00AFFFAE /* addShoppingListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -146,6 +161,7 @@
 			children = (
 				5D22D2B32207058F00B20A88 /* AddFoodViewController.swift */,
 				5D134B9F220DBC1200E8373B /* FoodCollectionViewController.swift */,
+				5D42378D22107F8100AFFFAE /* EditPantryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -161,7 +177,8 @@
 		5D9D5E2E2206EBFD00DF25C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				5D9D5E2F2206EC1300DF25C2 /* food.json */,
+				5D42378822107EF200AFFFAE /* cibo.json */,
+				5D42378722107EF200AFFFAE /* food.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -234,7 +251,7 @@
 		DEF10A362204AC2F00C594CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DEF10A3F2204AD5B00C594CD /* RecipesStoryboard.storyboard */,
+				5D42378122107E7900AFFFAE /* RecipesStoryboard.storyboard */,
 				173577B72207648000F28872 /* RecipeCollectionViewCell.swift */,
 				173577B9220764A400F28872 /* ExpiringFoodTableViewCell.swift */,
 				174A93C1220DDF9C003047BA /* IngredientListTableViewCell.swift */,
@@ -245,7 +262,7 @@
 		DEF10A392204AC6000C594CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DEF10A3A2204AC7800C594CD /* PantryStoryboard.storyboard */,
+				5D42378622107ED600AFFFAE /* PantryStoryboard.storyboard */,
 				5DA1C0C8220B027F00DD2B45 /* UIView+Circle.swift */,
 				5D1312CB2205A95400483414 /* MyCollectionViewCell.swift */,
 			);
@@ -255,7 +272,7 @@
 		DEF10A3C2204AC7F00C594CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DEF10A3D2204AC9600C594CD /* ShoppingListStoryboard.storyboard */,
+				5D42377322107CCC00AFFFAE /* ShoppingListStoryboard.storyboard */,
 				4D050DD422058EC400FEE70C /* PeerCollectionViewCell.swift */,
 				4D050DD92205945500FEE70C /* UIColor+Random.swift */,
 				4D050DDD2205E49C00FEE70C /* UIView+Gradient.swift */,
@@ -307,6 +324,7 @@
 			knownRegions = (
 				en,
 				Base,
+				it,
 			);
 			mainGroup = DEF10A152204A7B700C594CD;
 			productRefGroup = DEF10A1F2204A7B700C594CD /* Products */;
@@ -324,13 +342,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				DEF10A2C2204A7B800C594CD /* LaunchScreen.storyboard in Resources */,
-				5D9D5E302206EC1300DF25C2 /* food.json in Resources */,
-				DEF10A3E2204AC9600C594CD /* ShoppingListStoryboard.storyboard in Resources */,
+				5D42377E22107E6B00AFFFAE /* ricette.json in Resources */,
+				5D42377122107CCC00AFFFAE /* ShoppingListStoryboard.storyboard in Resources */,
+				5D42378922107EF200AFFFAE /* food.json in Resources */,
 				DEF10A292204A7B800C594CD /* Assets.xcassets in Resources */,
 				DEF10A272204A7B700C594CD /* Main.storyboard in Resources */,
-				DEF10A3B2204AC7800C594CD /* PantryStoryboard.storyboard in Resources */,
-				DEF10A402204AD5B00C594CD /* RecipesStoryboard.storyboard in Resources */,
-				173577AF22075D9B00F28872 /* Recipes.json in Resources */,
+				5D42378A22107EF200AFFFAE /* cibo.json in Resources */,
+				5D42378422107ED600AFFFAE /* PantryStoryboard.storyboard in Resources */,
+				5D42377F22107E7900AFFFAE /* RecipesStoryboard.storyboard in Resources */,
+				5D42377D22107E6B00AFFFAE /* recipes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,10 +374,12 @@
 				DEF10A242204A7B700C594CD /* ViewController.swift in Sources */,
 				5D22D2B42207058F00B20A88 /* AddFoodViewController.swift in Sources */,
 				173577BA220764A400F28872 /* ExpiringFoodTableViewCell.swift in Sources */,
+				5D42377A22107D3C00AFFFAE /* addShoppingListViewController.swift in Sources */,
 				173577B82207648000F28872 /* RecipeCollectionViewCell.swift in Sources */,
 				174A93C2220DDF9C003047BA /* IngredientListTableViewCell.swift in Sources */,
 				174A93C0220DCEC8003047BA /* Recipe.swift in Sources */,
 				173577B62207610600F28872 /* RecipesViewController.swift in Sources */,
+				5D42378E22107F8100AFFFAE /* EditPantryViewController.swift in Sources */,
 				DEF10A222204A7B700C594CD /* AppDelegate.swift in Sources */,
 				4D050DD522058EC400FEE70C /* PeerCollectionViewCell.swift in Sources */,
 				4D050DE02205E95C00FEE70C /* String+Substring.swift in Sources */,
@@ -371,10 +393,38 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		5D42377322107CCC00AFFFAE /* ShoppingListStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D42377222107CCC00AFFFAE /* Base */,
+				5D42377822107CE200AFFFAE /* it */,
+			);
+			name = ShoppingListStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		5D42378122107E7900AFFFAE /* RecipesStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D42378022107E7900AFFFAE /* Base */,
+				5D42378322107E7B00AFFFAE /* it */,
+			);
+			name = RecipesStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+		5D42378622107ED600AFFFAE /* PantryStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D42378522107ED600AFFFAE /* Base */,
+				5D42378C22107F4C00AFFFAE /* it */,
+			);
+			name = PantryStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
 		DEF10A252204A7B700C594CD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				DEF10A262204A7B700C594CD /* Base */,
+				5D42377622107CE200AFFFAE /* it */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -383,6 +433,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				DEF10A2B2204A7B800C594CD /* Base */,
+				5D42377722107CE200AFFFAE /* it */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -513,7 +564,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4MY4TRRN6T;
+				DEVELOPMENT_TEAM = K497KM82LN;
 				INFOPLIST_FILE = FoodWaste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -531,7 +582,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4MY4TRRN6T;
+				DEVELOPMENT_TEAM = K497KM82LN;
 				INFOPLIST_FILE = FoodWaste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

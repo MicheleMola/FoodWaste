@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Pane",
+    "expiration": "1 giorno rimanente",
+    "quantity": "1 pz",
+    "image": "Pane",
+    "_description": "gigi"
+  },
+  {
+    "name": "Broccoli",
+    "expiration": "2 giorni rimanenti",
+    "quantity": "3 pz",
+    "image": "broccoli",
+    "_description": "gigi"
+  },
+  {
+    "name": "Carote",
+    "expiration": "3 giorni rimanenti",
+    "quantity": "6 pz",
+    "image": "carrot",
+    "_description": "gigi"
+  },
+  {
+    "name": "Melenzane",
+    "expiration": "4 giorni rimanenti",
+    "quantity": "2 pz",
+    "image": "eggplant",
+    "_description": "gigi"
+  },
+  {
+    "name": "Uova",
+    "expiration": "5 giorni rimanenti",
+    "quantity": "5 pz",
+    "image": "eggs",
+    "_description": "gigi"
+  },
+  {
+    "name": "Leerdammer",
+    "expiration": "10 giorni rimanenti",
+    "quantity": "1 pz",
+    "image": "leerdammer",
+    "_description": "gigi"
+  },
+  {
+    "name": "Parmigiano Reggiano",
+    "expiration": "20 giorni rimanenti",
+    "quantity": "2 pz",
+    "image": "parmigiano",
+    "_description": "gigi"
+  },
+  {
+    "name": "Pasta",
+    "expiration": "30 giorni rimanenti",
+    "quantity": "1 pz",
+    "image": "Pasta",
+    "_description": "gigi"
+  },
+  {
+    "name": "Pizza",
+    "expiration": "22 giorni rimanenti",
+    "quantity": "1 pz",
+    "image": "Pizza",
+    "_description": "gigi"
+  },
+  {
+    "name": "Spezie",
+    "expiration": "40 giorni rimanenti",
+    "quantity": "3 pz",
+    "image": "Spezie",
+    "_description": "gigi"
+  }
+]
+
+
+

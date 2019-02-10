@@ -42,6 +42,12 @@ class FoodCollectionViewController: UICollectionViewController {
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
       return collectionTest.count
   }
+  
+  override func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+    let editPantryView: EditPantryViewController = self.storyboard?.instantiateViewController(withIdentifier: "EditPantryViewController") as! EditPantryViewController
+    editPantryView.food = collectionTest[indexPath.row]
+    self.navigationController?.pushViewController(editPantryView, animated: true)
+  }
 
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! MyCollectionViewCell
@@ -59,8 +65,17 @@ class FoodCollectionViewController: UICollectionViewController {
   }
   
   func getFood() {
-    if let collectionTest: [Food] = loadJson(filename: "food") {
-      self.collectionTest = collectionTest
+    if let language = Locale.current.languageCode {
+      var filename = "food"
+      
+      switch language {
+      case "it": filename = "cibo"
+      default: break
+      }
+      
+      if let collectionTest: [Food] = loadJson(filename: filename) {
+        self.collectionTest = collectionTest
+      }
     }
   }
   

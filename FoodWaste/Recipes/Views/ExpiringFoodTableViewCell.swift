@@ -23,11 +23,15 @@ class ExpiringFoodTableViewCell: UITableViewCell {
     }
     
     func changeColor (){
-        if expirationDateCell != nil && expirationDateCell.text?.contains("1 Day Left") == true || expirationDateCell.text?.contains("2 Days Left") == true || expirationDateCell.text?.contains("3 Days Left") == true {
-            expirationDateCell.textColor = UIColor.red
-        } else {
-            expirationDateCell.textColor = UIColor.black
-        }
+      if expirationDateCell != nil && expirationDateCell.text?.contains("1 Day left") == true || expirationDateCell.text?.contains("2 Days left") == true || expirationDateCell.text?.contains("3 Days left") == true {
+        expirationDateCell.textColor = UIColor.red
+      }
+      else if expirationDateCell != nil && expirationDateCell.text?.contains("1 Giorno Rimanente") == true || expirationDateCell.text?.contains("2 Giorni Rimanenti") == true || expirationDateCell.text?.contains("3 Giorni Rimanenti") == true {
+        expirationDateCell.textColor = UIColor.red
+      }
+      else {
+        expirationDateCell.textColor = UIColor.black
+      }
     }
     
 
@@ -53,24 +57,6 @@ class ExpiringFoodTableViewCell: UITableViewCell {
         self.shadowView.layer.shadowColor = UIColor.black.cgColor
         self.shadowView.layer.shadowOpacity = 0.1
         self.shadowView.layer.shadowRadius = 4
-    }
-
-    
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-
-    }
-    
-    
-    
-
-    override func layoutSubviews() {
-        super.layoutSubviews()
-        
-
     }
 
 }

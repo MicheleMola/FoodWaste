@@ -1,7 +1,7 @@
 [
   {
     "name": "Bread",
-    "expiration": "2 days left",
+    "expiration": "1 day left",
     "quantity": "1 pc",
     "image": "Pane",
     "_description": "gigi"
@@ -22,14 +22,14 @@
   },
   {
       "name": "Eggplants",
-      "expiration": "5 days left",
+      "expiration": "4 days left",
       "quantity": "2 pc",
       "image": "eggplant",
       "_description": "gigi"
   },
   {
       "name": "Eggs",
-      "expiration": "1 day left",
+      "expiration": "5 days left",
       "quantity": "5 pc",
       "image": "eggs",
       "_description": "gigi"

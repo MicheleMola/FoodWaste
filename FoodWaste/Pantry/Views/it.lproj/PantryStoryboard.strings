@@ -1,0 +1,71 @@
+/* Class = "UITabBarItem"; title = "Pantry"; ObjectID = "1WR-d1-Nhe"; */
+"1WR-d1-Nhe.title" = "Dispensa";
+
+/* Class = "UINavigationItem"; title = "Add Food"; ObjectID = "7mo-XT-4VN"; */
+"7mo-XT-4VN.title" = "Aggiungi Cibo";
+
+/* Class = "UITextField"; placeholder = "Quantity"; ObjectID = "HHp-gw-kkT"; */
+"HHp-gw-kkT.placeholder" = "Quantità";
+
+/* Class = "UITextField"; placeholder = "Expiration Date"; ObjectID = "J8z-iC-3g7"; */
+"J8z-iC-3g7.placeholder" = "Data di scadenza";
+
+/* Class = "UIBarButtonItem"; title = "Cancel"; ObjectID = "SCX-Ci-rLt"; */
+"SCX-Ci-rLt.title" = "Annulla";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "SJu-kJ-eOZ"; */
+"SJu-kJ-eOZ.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Vm5-9M-hvu"; */
+"Vm5-9M-hvu.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Pantry"; ObjectID = "ZFy-sO-1nK"; */
+"ZFy-sO-1nK.title" = "Dispensa";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "bdA-5o-fGu"; */
+"bdA-5o-fGu.text" = "Nome";
+
+/* Class = "UITextField"; placeholder = "Name"; ObjectID = "fKF-LQ-h9M"; */
+"fKF-LQ-h9M.placeholder" = "Nome";
+
+/* Class = "UILabel"; text = "I'm listening, example: 3 bananas December 3, 2020"; ObjectID = "g3m-MU-gus"; */
+"g3m-MU-gus.text" = "Sto ascoltando, esempio: 3 banane Dicembre 3, 2020";
+
+/* Class = "UILabel"; text = "Quantity"; ObjectID = "jGO-5t-IbN"; */
+"jGO-5t-IbN.text" = "Quantità";
+
+/* Class = "UILabel"; text = "2 days left"; ObjectID = "rig-Or-iTq"; */
+"rig-Or-iTq.text" = "2 giorni rimanenti";
+
+/* Class = "UILabel"; text = "Expiration\nDate"; ObjectID = "s4w-T1-YNw"; */
+"s4w-T1-YNw.text" = "Data di\nscadenza";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "tLE-JY-8rb"; */
+"tLE-JY-8rb.normalTitle" = "Button";
+
+/* Class = "UISegmentedControl"; yeN-R4-8gE.segmentTitles[0] = "pcs"; ObjectID = "yeN-R4-8gE"; */
+"yeN-R4-8gE.segmentTitles[0]" = "pz";
+
+/* Class = "UISegmentedControl"; yeN-R4-8gE.segmentTitles[1] = "g"; ObjectID = "yeN-R4-8gE"; */
+"yeN-R4-8gE.segmentTitles[1]" = "g";
+
+/*Edit food*/
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Ub9-PA-g6K"; */
+"Ub9-PA-g6K.text" = "Nome";
+
+/* Class = "UILabel"; text = "Quantity"; ObjectID = "kLm-b4-AL9"; */
+"Ca2-zP-bjH.text" = "Quantità";
+
+/* Class = "UILabel"; text = "Expiration\nDate"; ObjectID = "3Lf-Bz-xbN"; */
+"IOT-P2-hnq.text" = "Data di\nscadenza";
+
+/* Class = "UISegmentedControl"; yeN-R4-8gE.segmentTitles[0] = "pcs"; ObjectID = "vZe-qw-ekw"; */
+"osC-Dw-j6Z.segmentTitles[0]" = "pz";
+
+/* Class = "UISegmentedControl"; yeN-R4-8gE.segmentTitles[1] = "g"; ObjectID = "vZe-qw-ekw"; */
+"osC-Dw-j6Z.segmentTitles[1]" = "g";
+
+"uq9-qN-fDa.title" = "Annulla";
+
+"SW3-nt-13e.title" = "Salva";

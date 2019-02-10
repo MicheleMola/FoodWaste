@@ -1,0 +1,36 @@
+
+/* Class = "UILabel"; text = "Suggested Recipes"; ObjectID = "0eP-Wg-nNI"; */
+"0eP-Wg-nNI.text" = "Ricette Suggerite";
+
+/* Class = "UINavigationItem"; title = "Today"; ObjectID = "6iQ-YD-y1k"; */
+"6iQ-YD-y1k.title" = "Oggi";
+
+/* Class = "UILabel"; text = "Ingredients"; ObjectID = "9FO-6r-bZ2"; */
+"9FO-6r-bZ2.text" = "Ingredienti";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "BvI-0r-irR"; */
+"BvI-0r-irR.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Recipes"; ObjectID = "Emw-X5-WWy"; */
+"Emw-X5-WWy.title" = "Ricette";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "FBe-fZ-rEA"; */
+"FBe-fZ-rEA.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "IJV-sE-Aw0"; */
+"IJV-sE-Aw0.text" = "Label";
+
+/* Class = "UILabel"; text = "Steps"; ObjectID = "JN9-ek-b5X"; */
+"JN9-ek-b5X.text" = "Passaggi";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NTG-o4-h4V"; */
+"NTG-o4-h4V.text" = "Label";
+
+/* Class = "UILabel"; text = "Expiring food"; ObjectID = "Y8j-Nn-wz9"; */
+"Y8j-Nn-wz9.text" = "Cibo in scadenza";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kWs-Fz-G6n"; */
+"kWs-Fz-G6n.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "la6-zI-mun"; */
+"la6-zI-mun.text" = "Label";

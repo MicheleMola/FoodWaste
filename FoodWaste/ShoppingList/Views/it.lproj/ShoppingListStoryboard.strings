@@ -1,0 +1,41 @@
+
+/* Class = "UINavigationItem"; title = "Shopping List"; ObjectID = "0Vj-7H-dcz"; */
+"0Vj-7H-dcz.title" = "Lista della spesa";
+
+/* Class = "UILabel"; text = "LB"; ObjectID = "6cz-uH-sTk"; */
+"6cz-uH-sTk.text" = "LB";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9b7-LJ-dRd"; */
+"9b7-LJ-dRd.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Shopping List"; ObjectID = "HtE-Ue-KVj"; */
+"HtE-Ue-KVj.title" = "Lista della spesa";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wIY-mb-6hx"; */
+"wIY-mb-6hx.text" = "Label";
+
+
+
+"Hi5-kq-PfH.title" = "Aggiungi Cibo";
+
+"aEz-A7-zn5.title" = "Annulla";
+
+"FXK-bQ-xSz.text" = "Salva";
+
+"PFb-a8-sWT.text" = "Quantità";
+
+"tgR-So-4WV.placeholder" = "Quantità";
+
+"ewi-Zl-zWX.text" = "Nome";
+
+"nNS-sU-tKC.placeholder" = "Nome";
+
+/* Class = "UISegmentedControl"; */
+"aDh-a7-5fK.segmentTitles[0]" = "pz";
+
+/* Class = "UISegmentedControl";*/
+"aDh-a7-5fK.segmentTitles[1]" = "g";
+
+/* Class = "UILabel"; text = "I'm listening, example: 3 bananas"; ObjectID = "qyy-Wo-jR5; */
+"qyy-Wo-jR5.text" = "Sto ascoltando, esempio: 3 banane";
+
