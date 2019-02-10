@@ -1,0 +1,10 @@
+/*
+ InfoPlist.strings
+ FoodWaste
+ 
+ Created by Antonio Biondi on 10/02/2019.
+ Copyright © 2019 Michele Mola. All rights reserved.
+ */
+
+"Privacy - Speech Recognition Usage Description" = "Il riconoscimento vocale sarà utilizzato per determinare cosa dirai quando attiverai il microfono del device.";
+"Privacy - Microphone Usage Description" = "Il tuo microfono sarà usato per registrare la tua voce quando premerai sul bottone 'Microfono'.";
