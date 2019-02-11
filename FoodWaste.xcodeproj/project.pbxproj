@@ -39,7 +39,6 @@
 		5DA1C0C7220AE45400DD2B45 /* Pulsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA1C0C6220AE45400DD2B45 /* Pulsing.swift */; };
 		5DA1C0C9220B027F00DD2B45 /* UIView+Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA1C0C8220B027F00DD2B45 /* UIView+Circle.swift */; };
 		5DFDFCC622108E66003C5C53 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DFDFCC822108E66003C5C53 /* InfoPlist.strings */; };
-		5DFDFCCE221091B9003C5C53 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A2D2204A7B800C594CD /* Info.plist */; };
 		DEF10A222204A7B700C594CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF10A212204A7B700C594CD /* AppDelegate.swift */; };
 		DEF10A242204A7B700C594CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF10A232204A7B700C594CD /* ViewController.swift */; };
 		DEF10A272204A7B700C594CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A252204A7B700C594CD /* Main.storyboard */; };
@@ -354,7 +353,6 @@
 				DEF10A272204A7B700C594CD /* Main.storyboard in Resources */,
 				5D42378A22107EF200AFFFAE /* cibo.json in Resources */,
 				5D42378422107ED600AFFFAE /* PantryStoryboard.storyboard in Resources */,
-				5DFDFCCE221091B9003C5C53 /* Info.plist in Resources */,
 				5D42377F22107E7900AFFFAE /* RecipesStoryboard.storyboard in Resources */,
 				5DFDFCC622108E66003C5C53 /* InfoPlist.strings in Resources */,
 				5D42377D22107E6B00AFFFAE /* recipes.json in Resources */,
@@ -586,7 +584,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.ultravortex.mangiamo;
+				PRODUCT_BUNDLE_IDENTIFIER = ultravortex.mangiamo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -604,7 +602,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = app.ultravortex.mangiamo;
+				PRODUCT_BUNDLE_IDENTIFIER = ultravortex.mangiamo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
