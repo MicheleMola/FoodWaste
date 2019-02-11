@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CloudKit
 
 private let reuseIdentifier = "pantryCell"
 
@@ -22,6 +23,10 @@ class FoodCollectionViewController: UICollectionViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 
+  }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    
     self.getFood()
     self.setCollectionViewLayout()
     self.hideKeyboardWhenTappedAround()
@@ -65,18 +70,56 @@ class FoodCollectionViewController: UICollectionViewController {
   }
   
   func getFood() {
-    if let language = Locale.current.languageCode {
-      var filename = "food"
       
-      switch language {
-      case "it": filename = "cibo"
-      default: break
+      let privateDatabase = CKContainer.default().privateCloudDatabase
+      
+      let query = CKQuery(recordType: "Food", predicate: NSPredicate(value: true))
+      
+      query.sortDescriptors = [NSSortDescriptor(key: "Name", ascending: true)]
+      
+      privateDatabase.perform(query, inZoneWith: nil) { (records, error) in
+        
+        DispatchQueue.main.sync {
+          self.processResponseForQuery(records, error: error)
+        }
+        
+      }
+    
+  }
+  
+  private func processResponseForQuery(_ records: [CKRecord]?, error: Error?) {
+    var message = ""
+    collectionTest = []
+    
+    if let error = error {
+      print(error)
+      message = "Error Fetching Items for List"
+      
+    } else if let records = records {
+      for record in records {
+        
+        let food = Food(name: record["Name"]!, quantity: record["Quantity"]!, expiration: record["Expiration"]!, image: "eggs", id: record.recordID.recordName)
+        
+        collectionTest.append(food)
+        
       }
       
-      if let collectionTest: [Food] = loadJson(filename: filename) {
-        self.collectionTest = collectionTest
+      print(collectionTest.count)
+      
+      if collectionTest.count == 0 {
+        message = "No Items Found"
       }
+      
+    } else {
+      message = "No Items Found"
     }
+    
+    if message.isEmpty {
+      foodCollectionView.reloadData()
+    } else {
+      print(message)
+    }
+    
   }
   
   func setCollectionViewLayout() {

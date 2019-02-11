@@ -10,6 +10,7 @@ import UIKit
 import AVFoundation
 import Speech
 import NaturalLanguage
+import CloudKit
 
 class AddFoodViewController: UITableViewController, UITextFieldDelegate {
   
@@ -45,15 +46,27 @@ class AddFoodViewController: UITableViewController, UITextFieldDelegate {
   
   @IBAction func doneButton(_ sender: Any) {
     //Da implementare funzione che salva ciò che viene scritto in newFood
-
     
     // Create Food object to save
     let unit = quantitySegmentedControl.titleForSegment(at: quantitySegmentedControl.selectedSegmentIndex)
     
-    DispatchQueue.main.async {
-      self.navigationController?.popViewController(animated: true)
+    let privateDatabase = CKContainer.default().privateCloudDatabase
+    
+    let record = CKRecord(recordType: "Food")
+    
+    record["Name"] = nameTextField.text
+    record["Quantity"] = quantityTextField.text! + " " + unit!
+    record["Expiration"] = expirationDayTextField.text
+    
+    privateDatabase.save(record) { (record, error) -> Void in
+    
+      DispatchQueue.main.async {
+        self.navigationController?.popViewController(animated: true)
+        
+        self.dismiss(animated: true, completion: nil)
+        
+      }
       
-      self.dismiss(animated: true, completion: nil)
     }
   }
   

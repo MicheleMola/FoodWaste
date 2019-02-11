@@ -13,6 +13,7 @@
 		173577BE2207968100F28872 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173577BD2207968100F28872 /* RecipeDetailViewController.swift */; };
 		174A93C0220DCEC8003047BA /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A93BF220DCEC8003047BA /* Recipe.swift */; };
 		174A93C2220DDF9C003047BA /* IngredientListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174A93C1220DDF9C003047BA /* IngredientListTableViewCell.swift */; };
+		30069B122211C35C00762CA7 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30069B112211C35B00762CA7 /* CloudKit.framework */; };
 		4D050DD222058CB300FEE70C /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D050DD122058CB300FEE70C /* ShoppingListViewController.swift */; };
 		4D050DD522058EC400FEE70C /* PeerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D050DD422058EC400FEE70C /* PeerCollectionViewCell.swift */; };
 		4D050DD72205925F00FEE70C /* Peer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D050DD62205925F00FEE70C /* Peer.swift */; };
@@ -53,6 +54,8 @@
 		173577BD2207968100F28872 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		174A93BF220DCEC8003047BA /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		174A93C1220DDF9C003047BA /* IngredientListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientListTableViewCell.swift; sourceTree = "<group>"; };
+		30069B0F2211C2B000762CA7 /* FoodWaste.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FoodWaste.entitlements; sourceTree = "<group>"; };
+		30069B112211C35B00762CA7 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		4D050DD122058CB300FEE70C /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
 		4D050DD422058EC400FEE70C /* PeerCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerCollectionViewCell.swift; sourceTree = "<group>"; };
 		4D050DD62205925F00FEE70C /* Peer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peer.swift; sourceTree = "<group>"; };
@@ -99,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30069B122211C35C00762CA7 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +133,14 @@
 				173577BD2207968100F28872 /* RecipeDetailViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		30069B102211C35B00762CA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30069B112211C35B00762CA7 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		4D050DD322058CB900FEE70C /* Controller */ = {
@@ -191,6 +203,7 @@
 			children = (
 				DEF10A202204A7B700C594CD /* FoodWaste */,
 				DEF10A1F2204A7B700C594CD /* Products */,
+				30069B102211C35B00762CA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -205,6 +218,7 @@
 		DEF10A202204A7B700C594CD /* FoodWaste */ = {
 			isa = PBXGroup;
 			children = (
+				30069B0F2211C2B000762CA7 /* FoodWaste.entitlements */,
 				DEF10A352204AC0B00C594CD /* ShoppingList */,
 				DEF10A342204ABFE00C594CD /* Pantry */,
 				DEF10A332204ABDD00C594CD /* Recipes */,
@@ -318,6 +332,14 @@
 				TargetAttributes = {
 					DEF10A1D2204A7B700C594CD = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -577,15 +599,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FoodWaste/FoodWaste.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K497KM82LN;
+				DEVELOPMENT_TEAM = N9QY6FPEFA;
 				INFOPLIST_FILE = FoodWaste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ultravortex.foodwaste;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ultravortex.mangiamo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -595,15 +620,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FoodWaste/FoodWaste.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K497KM82LN;
+				DEVELOPMENT_TEAM = N9QY6FPEFA;
 				INFOPLIST_FILE = FoodWaste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ultravortex.foodwaste;
+				PRODUCT_BUNDLE_IDENTIFIER = app.ultravortex.mangiamo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
