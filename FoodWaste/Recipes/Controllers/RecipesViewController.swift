@@ -16,11 +16,14 @@ class RecipesViewController: UIViewController {
     // Created two IBOutlets to control the UICollectionView and UITableView
     @IBOutlet weak var recipesCollectionView: UICollectionView!
     @IBOutlet weak var expirationDatesTableView: UITableView!
+    @IBOutlet weak var suggestedRecipesLabel: UILabel!
+    @IBOutlet weak var expiringFoodLabel: UILabel!
 
+    
     //initializing two variables. The first one is recipes, of type RECIPE, initialized as an empty Array and the second one is expiringFood where we access the method fetchFood() that will return an array of food.
     var recipes: [Recipe] = []
-  var expiringEnglishFood = Food.fetchEnglishFood()
-  var expiringItalianFood = Food.fetchItalianFood()
+    var expiringEnglishFood = Food.fetchEnglishFood()
+    var expiringItalianFood = Food.fetchItalianFood()
     
   func getRecipes() {
     var filename = "recipes"
@@ -42,7 +45,9 @@ class RecipesViewController: UIViewController {
         recipesCollectionView?.delegate = self
         expirationDatesTableView?.dataSource = self
         expirationDatesTableView.separatorStyle = .none
-
+        expiringFoodLabel.accessibilityLabel = "Expiring food list. You will find the ten foods that are approaching the expiration date."
+        suggestedRecipesLabel.accessibilityLabel = " Today suggested recipes. Swipe to the right to find all the recipes."
+        
         
         self.getRecipes()
         

@@ -14,11 +14,13 @@ class Recipe: Codable {
     var recipeName: String
     var recipeImage: String
     var recipeDescription: String
+    var recipeIngredients: String
     
     
-    init (recipeName: String, recipeImage: String, recipeDescription: String) {
+    init (recipeName: String, recipeImage: String, recipeDescription: String, recipeIngredients: String) {
         self.recipeName = recipeName
         self.recipeImage = recipeImage
         self.recipeDescription = recipeDescription
+        self.recipeIngredients = recipeIngredients
     }
 }

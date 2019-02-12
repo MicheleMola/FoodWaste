@@ -179,7 +179,9 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="expirationDatesTableView" destination="Ffe-nM-wn5" id="QFx-Lv-Akh"/>
+                        <outlet property="expiringFoodLabel" destination="Y8j-Nn-wz9" id="xxw-FM-k66"/>
                         <outlet property="recipesCollectionView" destination="z6O-GY-Mpu" id="9La-Co-hoy"/>
+                        <outlet property="suggestedRecipesLabel" destination="0eP-Wg-nNI" id="F8p-u4-CYy"/>
                         <segue destination="e9N-Rc-SPC" kind="showDetail" identifier="DetailViewSegue" id="RzK-fu-mSb"/>
                     </connections>
                 </viewController>
@@ -260,41 +262,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9Lp-he-vL6">
-                                                    <rect key="frame" x="0.0" y="0.0" width="398" height="130"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <prototypes>
-                                                        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="IngredientList" id="kqR-nA-Zkc" customClass="IngredientListTableViewCell" customModule="FoodWaste" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="28" width="398" height="44"/>
-                                                            <autoresizingMask key="autoresizingMask"/>
-                                                            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kqR-nA-Zkc" id="wIk-xF-jxS">
-                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="43.5"/>
-                                                                <autoresizingMask key="autoresizingMask"/>
-                                                                <subviews>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTG-o4-h4V">
-                                                                        <rect key="frame" x="16" y="0.0" width="42" height="21"/>
-                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                        <nil key="textColor"/>
-                                                                        <nil key="highlightedColor"/>
-                                                                    </label>
-                                                                </subviews>
-                                                                <constraints>
-                                                                    <constraint firstItem="NTG-o4-h4V" firstAttribute="top" secondItem="wIk-xF-jxS" secondAttribute="top" id="9oQ-60-3Kj"/>
-                                                                    <constraint firstItem="NTG-o4-h4V" firstAttribute="leading" secondItem="wIk-xF-jxS" secondAttribute="leading" constant="16" id="sZD-f0-GiM"/>
-                                                                </constraints>
-                                                            </tableViewCellContentView>
-                                                            <connections>
-                                                                <outlet property="ingredient" destination="NTG-o4-h4V" id="zg0-UM-Gph"/>
-                                                            </connections>
-                                                        </tableViewCell>
-                                                    </prototypes>
-                                                </tableView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbB-K1-eRn">
+                                                    <rect key="frame" x="16" y="8" width="382" height="114"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="9Lp-he-vL6" firstAttribute="leading" secondItem="eHN-1u-3v7" secondAttribute="leading" id="8b9-dK-yU2"/>
-                                                <constraint firstAttribute="trailing" secondItem="9Lp-he-vL6" secondAttribute="trailing" constant="16" id="BFZ-DR-SBF"/>
-                                                <constraint firstAttribute="bottom" secondItem="9Lp-he-vL6" secondAttribute="bottom" id="L1O-3a-qmu"/>
-                                                <constraint firstItem="9Lp-he-vL6" firstAttribute="top" secondItem="eHN-1u-3v7" secondAttribute="top" id="SLi-cP-HHb"/>
+                                                <constraint firstItem="LbB-K1-eRn" firstAttribute="leading" secondItem="eHN-1u-3v7" secondAttribute="leading" constant="16" id="FoP-jr-UNO"/>
+                                                <constraint firstAttribute="bottom" secondItem="LbB-K1-eRn" secondAttribute="bottom" constant="8" id="b74-c6-CX1"/>
+                                                <constraint firstAttribute="trailing" secondItem="LbB-K1-eRn" secondAttribute="trailing" constant="16" id="hhR-TP-FIr"/>
+                                                <constraint firstItem="LbB-K1-eRn" firstAttribute="top" secondItem="eHN-1u-3v7" secondAttribute="top" constant="8" id="jOI-J6-9gM"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
@@ -353,6 +332,7 @@
                     <connections>
                         <outlet property="detailRecipeDescription" destination="IJV-sE-Aw0" id="Nos-5P-lfB"/>
                         <outlet property="detailRecipeImage" destination="zRv-oG-T8X" id="6IF-BA-0Eo"/>
+                        <outlet property="detailRecipeIngredientsList" destination="LbB-K1-eRn" id="HNp-Fy-Wm8"/>
                         <outlet property="detailRecipeName" destination="la6-zI-mun" id="AV9-0L-1oo"/>
                     </connections>
                 </tableViewController>

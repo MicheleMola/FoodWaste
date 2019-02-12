@@ -15,8 +15,8 @@ class RecipeDetailViewController: UITableViewController {
     @IBOutlet weak var detailRecipeImage: UIImageView!
     @IBOutlet weak var detailRecipeName: UILabel!
     @IBOutlet weak var detailRecipeDescription: UILabel!
-    @IBOutlet weak var ingredientList: UITableView!
     
+    @IBOutlet weak var detailRecipeIngredientsList: UILabel!
     var roundButton: UIButton!
     var recipe: Recipe?
 
@@ -28,12 +28,10 @@ class RecipeDetailViewController: UITableViewController {
     
         override func viewWillAppear(_ animated: Bool) {
             tableView.rowHeight = UITableView.automaticDimension
-            //tableView.estimatedRowHeight = 900
             createFloatingButton()
         }
     
         override func viewDidLayoutSubviews() {
-//            tableView.contentInset = UIEdgeInsets.zero
         }
     
         override var prefersStatusBarHidden: Bool {
@@ -47,8 +45,6 @@ class RecipeDetailViewController: UITableViewController {
             return 400
         case 1:
             return 55
-        case 2:
-            return 130
         case 3:
             return 44
         default:
@@ -69,6 +65,7 @@ class RecipeDetailViewController: UITableViewController {
         detailRecipeName.text = recipe.recipeName
         detailRecipeImage.image = UIImage(named: recipe.recipeImage)
         detailRecipeDescription.text = recipe.recipeDescription
+        detailRecipeIngredientsList.text = recipe.recipeIngredients
         
         }
     }
