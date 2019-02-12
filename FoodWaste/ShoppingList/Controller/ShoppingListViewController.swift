@@ -78,7 +78,7 @@ extension ShoppingListViewController: UICollectionViewDataSource {
     
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "peer", for: indexPath) as! PeerCollectionViewCell
     
-    if indexPath.row == peers.count {
+    if indexPath.row == 0 {
     
       cell.setUpButton()
       cell.delegate = self
