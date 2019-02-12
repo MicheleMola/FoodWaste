@@ -31,7 +31,7 @@ class PeerCollectionViewCell: UICollectionViewCell, UICollectionViewDelegate {
   
   override func awakeFromNib() {
     
-    self.gradient.addGradient(colors: [UIColor.black.cgColor, UIColor.white.cgColor], locations: [0.0, 1.0])
+    self.gradient.addGradient(colors: [UIColor.white.cgColor, UIColor.black.cgColor], locations: [0.0, 1.0])
     self.contentView.layer.cornerRadius = self.frame.size.width / 2
     self.contentView.layer.masksToBounds = true
   

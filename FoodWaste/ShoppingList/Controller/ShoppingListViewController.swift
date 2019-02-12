@@ -34,12 +34,13 @@ class ShoppingListViewController: UIViewController {
   
   func setupColors () {
     
-    colors.append(UIColor(red: 4/255, green: 57/255, blue: 54/255, alpha: 1))
-    colors.append(UIColor(red: 112/255, green: 214/255, blue: 255/255, alpha: 1))
-    colors.append(UIColor(red: 255/255, green: 200/255, blue: 87/255, alpha: 1))
-    colors.append(UIColor(red: 36/255, green: 30/255, blue: 78/255, alpha: 1))
-    colors.append(UIColor(red: 175/255, green: 27/255, blue: 63/255, alpha: 1))
-
+    colors.append(UIColor(red: 26/255, green: 188/255, blue: 156/255, alpha: 1))
+    colors.append(UIColor(red: 46/255, green: 204/255, blue: 113/255, alpha: 1))
+    colors.append(UIColor(red: 52/255, green: 152/255, blue: 219/255, alpha: 1))
+    colors.append(UIColor(red: 241/255, green: 196/255, blue: 15/255, alpha: 1))
+    colors.append(UIColor(red: 243/255, green: 156/255, blue: 18/255, alpha: 1))
+    colors.append(UIColor(red: 25/255, green: 42/255, blue: 86/255, alpha: 1))
+    
   }
   
   
@@ -48,7 +49,10 @@ class ShoppingListViewController: UIViewController {
     peers.append(Peer(name: "Alfredo", color: colors[0]))
     peers.append(Peer(name: "Luigi", color: colors[1]))
     peers.append(Peer(name: "Paolo", color: colors[2]))
-
+    peers.append(Peer(name: "Michele", color: colors[4]))
+    peers.append(Peer(name: "Renato", color: colors[5]))
+    peers.append(Peer(name: "Gigi", color: colors[3]))
+    
   }
   
   
@@ -80,7 +84,7 @@ extension ShoppingListViewController: UICollectionViewDataSource {
       cell.delegate = self
     
     } else {
-      cell.setUpCell (peer: peers[indexPath.row])
+      cell.setUpCell (peer: peers[(indexPath.row)-1])
     }
         
     return cell
