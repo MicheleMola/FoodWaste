@@ -23,8 +23,7 @@ class RecipesViewController: UIViewController {
     
     //initializing two variables. The first one is recipes, of type RECIPE, initialized as an empty Array and the second one is expiringFood where we access the method fetchFood() that will return an array of food.
     var recipes: [Recipe] = []
-    var expiringEnglishFood = Food.fetchEnglishFood()
-    var expiringItalianFood = Food.fetchItalianFood()
+    var expiringFoods: [Food] = []
     
   func getContent() {
     var filename = "recipes"
@@ -52,7 +51,7 @@ class RecipesViewController: UIViewController {
     
     queryOp.recordFetchedBlock = { record in
       
-      let food = Food(name: record["Name"]!, quantity: record["Quantity"]!, expiration: record["Expiration"]!, image: "eggs", id: record.recordID.recordName)
+      let food = Food(name: record["Name"]!, quantity: record["Quantity"]!, expiration: record["Expiration"]!, image: "icon-food", id: record.recordID.recordName)
       
       newFoods.append(food)
       
@@ -62,8 +61,7 @@ class RecipesViewController: UIViewController {
       DispatchQueue.main.sync {
         if error == nil {
          
-          self.expiringItalianFood = newFoods
-          self.expiringEnglishFood = newFoods
+          self.expiringFoods = newFoods
           self.expirationDatesTableView.reloadData()
           
         } else {
@@ -156,26 +154,16 @@ extension RecipesViewController: UICollectionViewDelegateFlowLayout {
 // takes care of tableview
 extension RecipesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-      if language == "it" {
-        return expiringEnglishFood.count
-      } else {
-        return expiringEnglishFood.count
-      }
-        
+        return expiringFoods.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       let cell = expirationDatesTableView.dequeueReusableCell(withIdentifier: "ExpiringFoodCell") as! ExpiringFoodTableViewCell
-      if language == "it" {
-        cell.foodExipiring = expiringItalianFood[indexPath.row]
-      } else {
-        cell.foodExipiring = expiringEnglishFood[indexPath.row]
-      }
+      
+        cell.foodExipiring = expiringFoods[indexPath.row]
       return cell
-    }
     
+    }
 }
-
-
 
 

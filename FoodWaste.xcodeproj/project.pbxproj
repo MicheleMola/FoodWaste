@@ -45,6 +45,7 @@
 		DEF10A272204A7B700C594CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A252204A7B700C594CD /* Main.storyboard */; };
 		DEF10A292204A7B800C594CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A282204A7B800C594CD /* Assets.xcassets */; };
 		DEF10A2C2204A7B800C594CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEF10A2A2204A7B800C594CD /* LaunchScreen.storyboard */; };
+		F4AE960B2214893C009C2A6E /* FoodCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AE960A2214893C009C2A6E /* FoodCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,7 @@
 		DEF10A282204A7B800C594CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DEF10A2B2204A7B800C594CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DEF10A2D2204A7B800C594CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4AE960A2214893C009C2A6E /* FoodCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +285,7 @@
 				5D42378622107ED600AFFFAE /* PantryStoryboard.storyboard */,
 				5DA1C0C8220B027F00DD2B45 /* UIView+Circle.swift */,
 				5D1312CB2205A95400483414 /* MyCollectionViewCell.swift */,
+				F4AE960A2214893C009C2A6E /* FoodCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -416,6 +419,7 @@
 				4D050DD222058CB300FEE70C /* ShoppingListViewController.swift in Sources */,
 				4D050DDA2205945500FEE70C /* UIColor+Random.swift in Sources */,
 				4D050DE222074A7700FEE70C /* ShoppingListItem.swift in Sources */,
+				F4AE960B2214893C009C2A6E /* FoodCell.swift in Sources */,
 				4D050DD72205925F00FEE70C /* Peer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -605,13 +609,13 @@
 				CODE_SIGN_ENTITLEMENTS = FoodWaste/FoodWaste.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K497KM82LN;
+				DEVELOPMENT_TEAM = 82675K6Q78;
 				INFOPLIST_FILE = FoodWaste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ultravortex.mangiamo;
+				PRODUCT_BUNDLE_IDENTIFIER = UltraVortex.FoodWaste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -626,13 +630,13 @@
 				CODE_SIGN_ENTITLEMENTS = FoodWaste/FoodWaste.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = K497KM82LN;
+				DEVELOPMENT_TEAM = 82675K6Q78;
 				INFOPLIST_FILE = FoodWaste/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ultravortex.mangiamo;
+				PRODUCT_BUNDLE_IDENTIFIER = UltraVortex.FoodWaste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

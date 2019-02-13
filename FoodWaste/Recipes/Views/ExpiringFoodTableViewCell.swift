@@ -14,6 +14,8 @@ class ExpiringFoodTableViewCell: UITableViewCell {
     @IBOutlet weak var foodNameCell: UILabel!
     @IBOutlet weak var expirationDateCell: UILabel!
     @IBOutlet weak var shadowView: UIView!
+  
+    private let language = Locale.current.languageCode
     
     var foodExipiring: Food? {
         didSet {
@@ -23,10 +25,10 @@ class ExpiringFoodTableViewCell: UITableViewCell {
     }
     
     func changeColor (){
-      if expirationDateCell != nil && expirationDateCell.text?.contains("1 Day Left") == true || expirationDateCell.text?.contains("2 Days Left") == true || expirationDateCell.text?.contains("3 Days Left") == true {
+      if expirationDateCell != nil && expirationDateCell.text?.contains("1 day left") == true || expirationDateCell.text?.contains("2 days left") == true || expirationDateCell.text?.contains("3 days left") == true {
         expirationDateCell.textColor = UIColor.red
       }
-      else if expirationDateCell != nil && expirationDateCell.text?.contains("1 Giorno Rimanente") == true || expirationDateCell.text?.contains("2 Giorni Rimanenti") == true || expirationDateCell.text?.contains("3 Giorni Rimanenti") == true {
+      else if expirationDateCell != nil && expirationDateCell.text?.contains("1 giorno rimanente") == true || expirationDateCell.text?.contains("2 giorni rimanenti") == true || expirationDateCell.text?.contains("3 giorni rimanenti") == true {
         expirationDateCell.textColor = UIColor.red
       }
       else {
@@ -38,8 +40,17 @@ class ExpiringFoodTableViewCell: UITableViewCell {
     private func updateTableViewCell() {
         if let foods = foodExipiring {
           foodImageCell.image = UIImage(named: foods.image)
-            foodNameCell.text = foods.name
-            expirationDateCell.text = foods.expiration
+          foodNameCell.text = foods.name
+            if let remainingDays = differenceFromCurrentDate(date: foods.expiration) {
+              var infoRemainingDays = String()
+              if language == "it" {
+                infoRemainingDays = "\(remainingDays) giorni rimanenti"
+              } else {
+                infoRemainingDays = "\(remainingDays) days left"
+              }
+              expirationDateCell.text = infoRemainingDays
+            }
+          
         } else {
             foodImageCell.image = nil
             foodNameCell.text = nil

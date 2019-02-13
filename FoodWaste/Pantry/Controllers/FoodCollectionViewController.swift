@@ -14,24 +14,21 @@ private let reuseIdentifier = "pantryCell"
 class FoodCollectionViewController: UICollectionViewController {
   
   private let language = Locale.current.languageCode
-  private let currentDate = NSDate()
   private let itemsPerRow: CGFloat = 2
   private let sectionInsets = UIEdgeInsets(top: 16.0, left: 16.0, bottom: 16.0, right: 16.0)
   var collectionTest: [Food] = []
   
   
-  @IBOutlet var foodCollectionView: UICollectionView!
-
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    self.collectionView.allowsSelection = true
   }
   
   override func viewDidAppear(_ animated: Bool) {
     
     self.getFood()
     self.setCollectionViewLayout()
-    self.hideKeyboardWhenTappedAround()
   }
 
     /*
@@ -50,7 +47,7 @@ class FoodCollectionViewController: UICollectionViewController {
       return collectionTest.count
   }
   
-  override func collectionView(_ collectionView: UICollectionView, didHighlightItemAt indexPath: IndexPath) {
+  override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
     let editPantryView: EditPantryViewController = self.storyboard?.instantiateViewController(withIdentifier: "EditPantryViewController") as! EditPantryViewController
     editPantryView.food = collectionTest[indexPath.row]
     self.navigationController?.pushViewController(editPantryView, animated: true)
@@ -61,16 +58,26 @@ class FoodCollectionViewController: UICollectionViewController {
       
     cell.nameLabel.text = collectionTest[indexPath.item].name
     cell.quantityLabel.text = collectionTest[indexPath.item].quantity
-    cell.expirationLabel.text = collectionTest[indexPath.item].expiration
+
+    if let remainingDays = differenceFromCurrentDate(date: collectionTest[indexPath.item].expiration) {
+      var infoRemainingDays = String()
+      if language == "it" {
+        infoRemainingDays = "\(remainingDays) giorni rimanenti"
+      } else {
+        infoRemainingDays = "\(remainingDays) days left"
+      }
+      cell.expirationLabel.text = infoRemainingDays
+    }
+
     cell.cellImage.image = UIImage(named: collectionTest[indexPath.item].image)
     cell.cellImage.layer.shadowColor = UIColor.black.cgColor
     cell.cellImage.layer.shadowOpacity = 1
-    
+
     cell.isAccessibilityElement = true
     cell.accessibilityLabel = "\(cell.nameLabel.text!), \(cell.quantityLabel.text!), \(cell.expirationLabel.text!)"
-    
+
     cell.setLayoutCell(cell: cell)
-      
+    
     return cell
   }
   
@@ -101,29 +108,17 @@ class FoodCollectionViewController: UICollectionViewController {
     } else if let records = records {
       for record in records {
         
-        let data = record["Expiration"]!
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-        dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
-        let date = dateFormatter.date(from:data as! String)!
-        let calendar = Calendar.current
-        let components = calendar.dateComponents([.year, .month, .day, .hour], from: date)
-        let finalDate = calendar.date(from:components)
-        
-        let diff = finalDate?.interval(ofComponent: .day, fromDate: currentDate as Date)
-        
+        guard let data = record["Expiration"] as? String else { return }
+
         if language == "it" {
-          let food = Food(name: record["Name"]!, quantity: record["Quantity"]!, expiration: "\(diff) days left", image: "icon-food", id: record.recordID.recordName)
+          let food = Food(name: record["Name"]!, quantity: record["Quantity"]!, expiration: data, image: "icon-food", id: record.recordID.recordName)
           collectionTest.append(food)
         }
         else {
-          let food = Food(name: record["Name"]!, quantity: record["Quantity"]!, expiration: "\(diff) giorni rimanenti", image: "icon-food", id: record.recordID.recordName)
+          let food = Food(name: record["Name"]!, quantity: record["Quantity"]!, expiration: data, image: "icon-food", id: record.recordID.recordName)
           collectionTest.append(food)
         }
       }
-
-      print(collectionTest.count)
 
       if collectionTest.count == 0 {
         message = "No Items Found"
@@ -134,31 +129,21 @@ class FoodCollectionViewController: UICollectionViewController {
     }
 
     if message.isEmpty {
-      foodCollectionView.reloadData()
+      collectionView.reloadData()
     } else {
       print(message)
     }
 
   }
-  
+    
   func setCollectionViewLayout() {
     let paddingSpace = sectionInsets.left * (itemsPerRow+1)
     let availableWidth = view.frame.width - paddingSpace
     let sizePerItem = availableWidth / itemsPerRow
     
-    let layout = foodCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+    let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
     layout.itemSize = CGSize(width: sizePerItem, height: sizePerItem)
   }
-  
-  func hideKeyboardWhenTappedAround() {
-    let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(FoodCollectionViewController.dismissKeyboard))
-    view.addGestureRecognizer(tap)
-  }
-  
-  @objc func dismissKeyboard() {
-    view.endEditing(true)
-  }
-
 
 }
 

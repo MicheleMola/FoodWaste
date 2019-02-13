@@ -62,8 +62,8 @@ class EditPantryViewController: UITableViewController, UITextFieldDelegate  {
     saveButton.isEnabled = false
     if let food = food {
       self.title = food.name
-      quantityTextField.placeholder = food.quantity
-      expirationDayTextField.placeholder = food.expiration
+      quantityTextField.text = food.quantity
+      expirationDayTextField.text = food.expiration
       foodImage.image = UIImage(named: food.image)
     }
   }

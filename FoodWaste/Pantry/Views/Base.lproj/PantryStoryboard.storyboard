@@ -92,7 +92,6 @@
                                     <outlet property="gradientCellView" destination="9Lc-Xf-DiH" id="Cif-vZ-VJf"/>
                                     <outlet property="nameLabel" destination="Vm5-9M-hvu" id="F2O-iv-STz"/>
                                     <outlet property="quantityLabel" destination="SJu-kJ-eOZ" id="KDz-30-WFe"/>
-                                    <segue destination="uq5-i5-Adm" kind="show" id="bGh-2K-091"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -104,9 +103,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="foodCollectionView" destination="fhl-xB-LdD" id="pwn-kt-Pdl"/>
-                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXG-3Z-oRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
