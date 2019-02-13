@@ -22,12 +22,11 @@ class MyCollectionViewCell: UICollectionViewCell {
     cell.layer.borderColor = UIColor.clear.cgColor
     cell.layer.masksToBounds = false
     
+
+    cell.layer.shadowOffset = CGSize(width: 0, height: 0)
     cell.layer.shadowColor = UIColor.black.cgColor
-    cell.layer.shadowOffset = CGSize(width: 0, height: 2.0)
-    cell.layer.shadowRadius = 15.0
-    cell.layer.shadowOpacity = 0.5
-    cell.layer.masksToBounds = false
-    cell.layer.shadowPath = UIBezierPath(roundedRect: cell.bounds, cornerRadius: cell.contentView.layer.cornerRadius).cgPath
+    cell.layer.shadowOpacity = 0.1
+    cell.layer.shadowRadius = 4
     
     gradientCellView.layer.cornerRadius = 20
     gradientCellView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]

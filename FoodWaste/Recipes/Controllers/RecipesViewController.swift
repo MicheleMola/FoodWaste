@@ -12,7 +12,7 @@ import CloudKit
 
 class RecipesViewController: UIViewController {
   
-  let language = Locale.current.languageCode
+    let language = Locale.current.languageCode
   
     // Created two IBOutlets to control the UICollectionView and UITableView
     @IBOutlet weak var recipesCollectionView: UICollectionView!
@@ -88,6 +88,17 @@ class RecipesViewController: UIViewController {
         expiringFoodLabel.accessibilityLabel = "Expiring food list. You will find the ten foods that are approaching the expiration date."
         suggestedRecipesLabel.accessibilityLabel = " Today suggested recipes. Swipe to the right to find all the recipes."
       
+        if language == "it" {
+          expiringFoodLabel.accessibilityLabel = "Lista del cibo in scadenza. Troverai i dieci cibi che sono più vicini alla scadenza."
+          suggestedRecipesLabel.accessibilityLabel = "Ricette suggerite del giorno. Swipe verso sinistra per trovare tutte le ricette."
+        }
+        else {
+          expiringFoodLabel.accessibilityLabel = "Expiring food list. You will find the ten foods that are approaching the expiration date."
+          suggestedRecipesLabel.accessibilityLabel = "Today suggested recipes. Swipe to the right to find all the recipes."
+        }
+        
+        
+        self.getRecipes()
         
     }
     
@@ -113,8 +124,8 @@ extension RecipesViewController: UICollectionViewDataSource, UICollectionViewDel
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RecipeCell", for: indexPath) as! RecipeCollectionViewCell
         cell.suggestedRecipeName.text = recipes[indexPath.row].recipeName
         cell.suggestedRecipeImage.image = UIImage(named: recipes[indexPath.row].recipeImage)
-      cell.isAccessibilityElement = true
-      cell.accessibilityLabel = recipes[indexPath.row].recipeName
+        cell.isAccessibilityElement = true
+        cell.accessibilityLabel = recipes[indexPath.row].recipeName
         return  cell
     }
     

@@ -50,19 +50,19 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vm5-9M-hvu" userLabel="nameLabel">
-                                            <rect key="frame" x="8" y="124" width="44" height="24"/>
+                                            <rect key="frame" x="8" y="118.5" width="44" height="21.5"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 days left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rig-Or-iTq" userLabel="expirationLabel">
-                                            <rect key="frame" x="8" y="145" width="100" height="17"/>
+                                            <rect key="frame" x="8" y="139.5" width="59" height="14.5"/>
                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SJu-kJ-eOZ" userLabel="quantityLabel">
-                                            <rect key="frame" x="132" y="145" width="31" height="15"/>
+                                            <rect key="frame" x="131" y="139" width="31" height="15"/>
                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <nil key="highlightedColor"/>
@@ -71,22 +71,18 @@
                                 </view>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="9Lc-Xf-DiH" secondAttribute="trailing" id="9fC-td-5B2"/>
-                                    <constraint firstAttribute="trailing" secondItem="SJu-kJ-eOZ" secondAttribute="trailing" constant="7" id="EkJ-hL-Jba"/>
+                                    <constraint firstAttribute="trailing" secondItem="SJu-kJ-eOZ" secondAttribute="trailing" constant="8" id="EkJ-hL-Jba"/>
+                                    <constraint firstItem="rig-Or-iTq" firstAttribute="top" secondItem="Vm5-9M-hvu" secondAttribute="bottom" constant="-0.5" id="Hr9-od-cNQ"/>
                                     <constraint firstItem="rig-Or-iTq" firstAttribute="leading" secondItem="Q1U-IN-VAK" secondAttribute="leading" constant="8" id="J2w-jU-W2F"/>
-                                    <constraint firstItem="Vm5-9M-hvu" firstAttribute="top" secondItem="Q1U-IN-VAK" secondAttribute="top" constant="124" id="KoP-Vf-eUc"/>
                                     <constraint firstItem="Vm5-9M-hvu" firstAttribute="leading" secondItem="Q1U-IN-VAK" secondAttribute="leading" constant="8" id="Mfn-Y6-gx1"/>
                                     <constraint firstItem="XRC-pf-CDR" firstAttribute="leading" secondItem="Q1U-IN-VAK" secondAttribute="leading" id="Opo-K3-Yxy"/>
                                     <constraint firstAttribute="bottom" secondItem="XRC-pf-CDR" secondAttribute="bottom" id="Pjz-7o-SfF"/>
-                                    <constraint firstAttribute="bottom" secondItem="rig-Or-iTq" secondAttribute="bottom" constant="8" id="VLT-vT-kAy"/>
-                                    <constraint firstItem="SJu-kJ-eOZ" firstAttribute="leading" secondItem="Q1U-IN-VAK" secondAttribute="leading" constant="132" id="Ycz-Dg-2ib"/>
+                                    <constraint firstAttribute="bottom" secondItem="rig-Or-iTq" secondAttribute="bottom" constant="16" id="VLT-vT-kAy"/>
                                     <constraint firstItem="9Lc-Xf-DiH" firstAttribute="leading" secondItem="Q1U-IN-VAK" secondAttribute="leading" id="Ye4-hw-xhc"/>
-                                    <constraint firstItem="SJu-kJ-eOZ" firstAttribute="top" secondItem="Q1U-IN-VAK" secondAttribute="top" constant="145" id="im4-TV-jch"/>
-                                    <constraint firstAttribute="trailing" secondItem="rig-Or-iTq" secondAttribute="trailing" constant="62" id="jv2-w4-Cfr"/>
                                     <constraint firstAttribute="trailing" secondItem="XRC-pf-CDR" secondAttribute="trailing" id="kkY-dl-lX9"/>
-                                    <constraint firstAttribute="bottom" secondItem="SJu-kJ-eOZ" secondAttribute="bottom" constant="10" id="nOh-od-Ldx"/>
-                                    <constraint firstItem="rig-Or-iTq" firstAttribute="top" secondItem="Q1U-IN-VAK" secondAttribute="top" constant="145" id="qdg-ju-wIR"/>
+                                    <constraint firstAttribute="bottom" secondItem="SJu-kJ-eOZ" secondAttribute="bottom" constant="16" id="nOh-od-Ldx"/>
                                     <constraint firstItem="XRC-pf-CDR" firstAttribute="top" secondItem="Q1U-IN-VAK" secondAttribute="top" id="qoM-1o-OeI"/>
-                                    <constraint firstAttribute="bottom" secondItem="Vm5-9M-hvu" secondAttribute="bottom" constant="22" id="toe-k4-UEW"/>
+                                    <constraint firstAttribute="bottom" secondItem="Vm5-9M-hvu" secondAttribute="bottom" constant="30" id="toe-k4-UEW"/>
                                     <constraint firstAttribute="bottom" secondItem="9Lc-Xf-DiH" secondAttribute="bottom" id="yEH-IE-ugJ"/>
                                 </constraints>
                                 <size key="customSize" width="170" height="170"/>
@@ -96,6 +92,7 @@
                                     <outlet property="gradientCellView" destination="9Lc-Xf-DiH" id="Cif-vZ-VJf"/>
                                     <outlet property="nameLabel" destination="Vm5-9M-hvu" id="F2O-iv-STz"/>
                                     <outlet property="quantityLabel" destination="SJu-kJ-eOZ" id="KDz-30-WFe"/>
+                                    <segue destination="uq5-i5-Adm" kind="show" id="bGh-2K-091"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -523,24 +520,6 @@ Date</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b76-t2-AEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1680" y="686"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="TID-kC-cRv">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dna-U2-Yfv" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bz0-xI-dwy">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="uq5-i5-Adm" kind="relationship" relationship="rootViewController" id="vfM-89-acm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QUy-tz-84n" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="768" y="686"/>
         </scene>
     </scenes>
     <resources>

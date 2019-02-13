@@ -3,30 +3,36 @@
         "recipeName": "Carbonara",
         "recipeImage": "carbonara",
         "recipeDescription": "1) Cuocete gli spaghetti in acqua bollente e con poco sale. La cottura deve essere al dente.\n\n2) Nel frattempo tagliate a dadini la pancetta o il guanciale di maiale (secondo la tradizione è quest'ultimo che andrebbe utilizzato), lasciando sciogliere in un tegame con un poco di olio.\n\n3) Quando la pancetta o il guanciale appariranno parzialmente sciolti aggiungete un pochino di acqua e cucinare a fuoco moderato per circa 10 minuti.\n\n4) Sbattete in un'insalatiera i quattro tuorli, come per fare una comune frittata, ed aggiungete il pecorino ed un buon pizzico di pepe nero.\n\n5) Versate la pasta scolata in una terrina capiente e aggiungetevi la pancetta o il guanciale preparati con l'unto bollente.\n\n6) Mescolate gli ingredienti delicatamente e unite le uova preparate col formaggio, amalgamandole finchè non risulteranno rapprese e servite la pasta ben calda.",
-        "recipeIngredients": "1) Spaghetti - 400g\n\n2) Pancetta - 200g \n\n3) Uova - 4 tuorli\n\n4) Pecorino - 50g\n\n5) Olio - Sale - Pepe"
+        "recipeIngredients": "- Spaghetti - 400g\n\n- Pancetta - 200g \n\n- Uova - 4 tuorli\n\n- Pecorino - 50g\n\n- Olio - Sale - Pepe"
     },
     {
         "recipeName": "Mozzarella impanata",
         "recipeImage": "mozzarella",
-        "recipeDescription": "Tagliate la mozzarella a fette alte circa 1 centimetro.2)Passatele nella farina, poi nell'uovo sbattuto a frittata con un pizzico di sale e infine nel pangrattato; premete col palmo delle mani perché aderisca bene.3)Immergete le fette di mozzarella in abbondante olio bollente, ma non fumante; friggetele a calore forte da ambo le parti per pochi minuti. Scolatele dorate e servitele subito.",
-        "recipeIngredients": "1)Mozzarella - 400g\n\n2)Uova - 2 pz\n\n3) Pangrattato - 100g\n\n4) Sale\n\n5) Olio di girasole"
+        "recipeDescription": "1) Tagliate la mozzarella a fette alte circa 1 centimetro.\n\n2) Passatele nella farina, poi nell'uovo sbattuto a frittata con un pizzico di sale e infine nel pangrattato; premete col palmo delle mani perché aderisca bene.\n\n3) Immergete le fette di mozzarella in abbondante olio bollente, ma non fumante; friggetele a calore forte da ambo le parti per pochi minuti. Scolatele dorate e servitele subito.",
+        "recipeIngredients": "- Mozzarella - 400g\n\n- Uova - 2 pz\n\n- Pangrattato - 100g\n\n- Sale\n\n- Olio di girasole"
     },
     {
         "recipeName": "Fettuccine all'Alfredo",
         "recipeImage": "fettuccine",
-        "recipeDescription": "Sciogliete il burro in una pentola o padella grande. Unite la panna e portatela a ebollizione. Fate sobbollire mescolando per 5 minuti, poi unite il parmigiano, aggiustando di sale e pepe, e spegnete il fuoco sotto la pentola.\n\n2)Portate a ebollizione una pentola grande di acqua salata e lessatevi le fettuccine scolandole molto al dente.\n\n3)Rimettete su fuoco basso la panna, unite la pasta e saltatela fino a farla amalgamare. Aggiustate di sapore e servite subito con parmigiano grattugiato a parte.",
-        "recipeIngredients": "1)Fettuccine - 300g\n\n2)Panna - 200ml\n\n3)Burro - 50g\n\n4)Parmigiano - 50g\n\n5 Sale - Pepe)"
+        "recipeDescription": "1) Sciogliete il burro in una pentola o padella grande. Unite la panna e portatela a ebollizione. Fate sobbollire mescolando per 5 minuti, poi unite il parmigiano, aggiustando di sale e pepe, e spegnete il fuoco sotto la pentola.\n\n2) Portate a ebollizione una pentola grande di acqua salata e lessatevi le fettuccine scolandole molto al dente.\n\n3) Rimettete su fuoco basso la panna, unite la pasta e saltatela fino a farla amalgamare. Aggiustate di sapore e servite subito con parmigiano grattugiato a parte.",
+        "recipeIngredients": "- Fettuccine - 300g\n\n- Panna - 200ml\n\n- Burro - 50g\n\n- Parmigiano - 50g\n\n- Sale - Pepe"
     },
     {
         "recipeName": "Patate alla pescatora",
         "recipeImage": "patate",
-        "recipeDescription": "Pelate le patate bollite e tagliatele a cubetti.2)Sbucciate la cipolla e tagliatela a fette sottile, unitela alle patate aggiungendo il tonno scolato dall’olio e unito al prezzemolo tritato.3)Condite con sale, pepe ed olio. Mescolate per bene e servite",
-        "recipeIngredients": "1)Patate - 3 pz\n\n2) Cipolla - 1pz\n\n3) Tonno in scatola - 1pz\n\n4) Sale - Prezzemolo - Olio"
+        "recipeDescription": "1) Pelate le patate bollite e tagliatele a cubetti.\n\n2) Sbucciate la cipolla e tagliatela a fette sottile, unitela alle patate aggiungendo il tonno scolato dall’olio e unito al prezzemolo tritato.\n\n3) Condite con sale, pepe ed olio. Mescolate per bene e servite",
+        "recipeIngredients": "- Patate - 3 pz\n\n- Cipolla - 1pz\n\n- Tonno in scatola - 1pz\n\n- Sale - Prezzemolo - Olio"
+    },
+    {
+        "recipeName": "Pizza Margherita",
+        "recipeImage": "pizza",
+        "recipeDescription": "1) In una terrina mettere 25 ml di acqua tiepida non bollente in cui sciogliere il lievito, lasciare coperto per 20 minuti a lievitare.\n\n2) Setacciare la farina ed unirla al sale, al lievitino preparato in precedenza, allo zucchero ed all'olio. Lavorare l'impasto a lungo aggiugendo tanta acqua da ottenere un impasto abbastanza morbido.\n\n3) Continuare a lavorare la pasta finché l'impasto omogeneo.\n\n4) Coprire la terrina con un panno pulito e lasciar lievitare la pasta per almeno 2 ore (in un posto caldo e non soggetto a correnti d'aria, d'inverno, se l'ambiente è freddo, potrebbero occorrere anche più tempo).\n\n5) Nel frattempo tagliate la mozzarella o il fiordilatte a fettine sottili.\n\n6) Una volta che la pasta sarà lievitata, ungere con l'olio di oliva una teglia di 30 x 40 cm e stendervi l'impasto, avendo cura di mantenere uno spessore uniforme di circa 1 cm.\n\n7) Distribuire la passata di pomodoro, qualche fogliolina di basilico, un filo d'olio e la mozzarella.\n\n8) Mettere la pizza margherita in forno preriscaldato a 220 °C lasciandola poi cuocere per circa 15/20 minuti, in funzione dello spessore che le avrete dato. Al momento di sfornarla servirla immediatamente in tavola.",
+        "recipeIngredients": "- Farina - 500 g\n\n- Lievito di birra - 10 g\n\n- Olio di oliva extravergine - q.b.\n\n- Sale - 1⁄2 cucchiaino\n\n- Passata di pomoro\n\n- Mozzarella - 1 pz\n\n- Basilico - qualche foglia\n\n- Zucchero - 1 cucchiaino"
     },
     {
         "recipeName": "Pancakes",
         "recipeImage": "pancakes",
-        "recipeDescription": "1) Fondiamo i 30 g di burro a bagno maria oppure al microonde, lasciamo raffredda e dopodiché aggiungiamolo al latte.In una terrina uniamo la farina il bicarbonato e lo zucchero.\n\n2) Prendiamo l'uovo e dividiamo il tuorlo dal bianco,quest'ultimo lo montiamo a neve e nel tuorlo ci aggiungiamo le gocce di vaniglia.Ora nella terrina con la farina aggiungiamo il tuorlo d'uovo, il latte con il burro e iniziamo a mescolare il tutto.\n\n3) aggiunto un'impasto omogeneo uniamo il bianco montato a neve,mi raccomando amalgamate sempre dal basso verso l'alto.Raggiunta la consistenza del nostro impasto lasciatelo riposare per circa 10 min, per chi ha utilizzato il lievito mentre 20 min per chi ha utilizzato il bicarbonato.Ora siamo pronti a fare i nostri pancake.\n\n4) Prendete una padella e imburratela,mettetela sul fuoco con una fiamma media e attendete che il burro si sciolga e inizi a sfrigolare, ora con un mestolo aggiungiamo il nostro impasto(riempiamo il mestolo un po meno della metà).\n\n5) Quando iniziano a formarsi dei piccoli bucherelli possiamo girarli.I nostri pancake sono pronti.Serviteli con del miele o con lo sciroppo d'acero,insomma con quello che più vi piace.",
-        "recipeIngredients": "1)\n\n2)\n\n3)\n\n4)\n\n5)"
+        "recipeDescription": "1) Unite in una terrina lo zucchero, la farina, il lievito ed il sale. A parte invece sbattete l'uovo amalgamandolo con il latte e l'olio.\n\n2) Aggiungete quindi il composto alla prima miscela preparata e mescolate fino ad ottenere una pastella omogenea.\n\n3) Proseguite a mescolare lasciando però il composto piuttosto granuloso, quindi evitando di renderlo perfettamente liscio e lasciando quindi gli eventuali grumi che si potranno essere formati.\n\n4) Nel frattempo, in base alla grandezza desiderata, adagiare mezzo mescolo scarso (circa 30 ml) in una griglia o in una padella leggermente unta d'olio.\n\n5) Procedere alla cottura finché le frittelle non raggiungeranno un bel colore dorato intenso, avendo cura di voltarle non appena si siano rigonfiate e la superficie sia lievemente asciutta. La ricetta è per una dozzina di pancakes di medie dimensioni.",
+        "recipeIngredients": "- Farina - 125g\n\n- Zucchero - 1 cucchiaio. \n\n- Lievito in polvere - 2 cucchiaini.\n\n- Uova - 1 pz \n\n- Latte - 220 ml \n\n- Olio "
     }
 ]

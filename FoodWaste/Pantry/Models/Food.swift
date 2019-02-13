@@ -14,7 +14,7 @@ class Food: NSObject, Codable {
   let quantity : String
   let expiration : String
   let image : String
-  let id : String
+  let id : String?
 
   init (name: String, quantity: String, expiration: String, image: String, id: String) {
     self.name = name
