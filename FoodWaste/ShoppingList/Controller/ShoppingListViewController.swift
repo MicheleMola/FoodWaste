@@ -9,7 +9,6 @@
 import UIKit
 import MultipeerConnectivity
 
-
 class ShoppingListViewController: UIViewController {
   
   var peers: [Peer] = []
@@ -103,6 +102,7 @@ extension ShoppingListViewController: UICollectionViewDelegate {
       
       let cell = tableView.cellForRow(at: indexPath) as! ShoppingListItemTableViewCell
       cell.choosen.backgroundColor = self.colors[0]
+      UIImageView.appearance().tintColor = self.view.tintColor
       completionHandler (true)
       
     })
@@ -125,6 +125,7 @@ extension ShoppingListViewController: UICollectionViewDelegate {
       
       self.shoppingListItems.remove(at: indexPath.row)
       tableView.deleteRows(at: [indexPath], with: .automatic)
+      UIImageView.appearance().tintColor = self.view.tintColor
       completionHandler (true)
     })
     
