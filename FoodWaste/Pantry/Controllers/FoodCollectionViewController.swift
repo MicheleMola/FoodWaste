@@ -63,63 +63,64 @@ class FoodCollectionViewController: UICollectionViewController {
     cell.cellImage.image = UIImage(named: collectionTest[indexPath.item].image)
     cell.cellImage.layer.shadowColor = UIColor.black.cgColor
     cell.cellImage.layer.shadowOpacity = 1
-      
+    
+    cell.isAccessibilityElement = true
+    cell.accessibilityLabel = "\(cell.nameLabel.text!), \(cell.quantityLabel.text!), \(cell.expirationLabel.text!)"
+    
     cell.setLayoutCell(cell: cell)
       
     return cell
   }
   
   func getFood() {
-      
+    
       let privateDatabase = CKContainer.default().privateCloudDatabase
-      
+    
       let query = CKQuery(recordType: "Food", predicate: NSPredicate(value: true))
-      
+    
       query.sortDescriptors = [NSSortDescriptor(key: "Name", ascending: true)]
-      
+    
       privateDatabase.perform(query, inZoneWith: nil) { (records, error) in
         
         DispatchQueue.main.sync {
           self.processResponseForQuery(records, error: error)
         }
-        
       }
-    
   }
   
   private func processResponseForQuery(_ records: [CKRecord]?, error: Error?) {
     var message = ""
     collectionTest = []
-    
+
     if let error = error {
       print(error)
       message = "Error Fetching Items for List"
-      
+
     } else if let records = records {
       for record in records {
-        
+
         let food = Food(name: record["Name"]!, quantity: record["Quantity"]!, expiration: record["Expiration"]!, image: "eggs", id: record.recordID.recordName)
-        
+
         collectionTest.append(food)
-        
+
       }
-      
+
       print(collectionTest.count)
-      
+
       if collectionTest.count == 0 {
         message = "No Items Found"
       }
-      
+
     } else {
       message = "No Items Found"
     }
-    
+
     if message.isEmpty {
       foodCollectionView.reloadData()
     } else {
       print(message)
     }
-    
+
   }
   
   func setCollectionViewLayout() {
@@ -140,35 +141,5 @@ class FoodCollectionViewController: UICollectionViewController {
     view.endEditing(true)
   }
 
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
-    }
-    */
 
 }
