@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CloudKit
 
 class RecipesViewController: UIViewController {
   
@@ -25,7 +26,7 @@ class RecipesViewController: UIViewController {
     var expiringEnglishFood = Food.fetchEnglishFood()
     var expiringItalianFood = Food.fetchItalianFood()
     
-  func getRecipes() {
+  func getContent() {
     var filename = "recipes"
     
     switch language {
@@ -36,6 +37,45 @@ class RecipesViewController: UIViewController {
     if let recipes: [Recipe] = loadJson(filename: filename) {
       self.recipes = recipes
     }
+    
+    var newFoods = [Food]()
+    
+    let privateDatabase = CKContainer.default().privateCloudDatabase
+    
+    let query = CKQuery(recordType: "Food", predicate: NSPredicate(value: true))
+    
+    query.sortDescriptors = [NSSortDescriptor(key: "Name", ascending: true)]
+    
+    let queryOp = CKQueryOperation(query: query)
+    
+    queryOp.resultsLimit = 10
+    
+    queryOp.recordFetchedBlock = { record in
+      
+      let food = Food(name: record["Name"]!, quantity: record["Quantity"]!, expiration: record["Expiration"]!, image: "eggs", id: record.recordID.recordName)
+      
+      newFoods.append(food)
+      
+    }
+    
+    queryOp.queryCompletionBlock = { (cursor, error) in
+      DispatchQueue.main.sync {
+        if error == nil {
+         
+          self.expiringItalianFood = newFoods
+          self.expiringEnglishFood = newFoods
+          self.expirationDatesTableView.reloadData()
+          
+        } else {
+          print(error)
+        }
+        
+      }
+      
+    }
+    
+    privateDatabase.add(queryOp)
+    
   }
     
     override func viewDidLoad() {
@@ -47,15 +87,17 @@ class RecipesViewController: UIViewController {
         expirationDatesTableView.separatorStyle = .none
         expiringFoodLabel.accessibilityLabel = "Expiring food list. You will find the ten foods that are approaching the expiration date."
         suggestedRecipesLabel.accessibilityLabel = " Today suggested recipes. Swipe to the right to find all the recipes."
-        
-        
-        self.getRecipes()
+      
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
 
     }
+  
+  override func viewDidAppear(_ animated: Bool) {
+    self.getContent()
+  }
     
 
 }
