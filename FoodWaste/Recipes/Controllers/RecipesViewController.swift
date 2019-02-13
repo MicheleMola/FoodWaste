@@ -11,7 +11,7 @@ import UIKit
 
 class RecipesViewController: UIViewController {
   
-  let language = Locale.current.languageCode
+    let language = Locale.current.languageCode
   
     // Created two IBOutlets to control the UICollectionView and UITableView
     @IBOutlet weak var recipesCollectionView: UICollectionView!
@@ -25,18 +25,18 @@ class RecipesViewController: UIViewController {
     var expiringEnglishFood = Food.fetchEnglishFood()
     var expiringItalianFood = Food.fetchItalianFood()
     
-  func getRecipes() {
-    var filename = "recipes"
-    
-    switch language {
-    case "it": filename = "ricette"
-    default: break
+    func getRecipes() {
+      var filename = "recipes"
+      
+      switch language {
+      case "it": filename = "ricette"
+      default: break
+      }
+      
+      if let recipes: [Recipe] = loadJson(filename: filename) {
+        self.recipes = recipes
+      }
     }
-    
-    if let recipes: [Recipe] = loadJson(filename: filename) {
-      self.recipes = recipes
-    }
-  }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,12 +59,7 @@ class RecipesViewController: UIViewController {
         self.getRecipes()
         
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-
-    }
-    
-
+  
 }
 
 // takes care of the collection view
