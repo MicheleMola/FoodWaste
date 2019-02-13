@@ -13,6 +13,8 @@ private let reuseIdentifier = "pantryCell"
 
 class FoodCollectionViewController: UICollectionViewController {
   
+  private let language = Locale.current.languageCode
+  private let currentDate = NSDate()
   private let itemsPerRow: CGFloat = 2
   private let sectionInsets = UIEdgeInsets(top: 16.0, left: 16.0, bottom: 16.0, right: 16.0)
   var collectionTest: [Food] = []
@@ -98,11 +100,27 @@ class FoodCollectionViewController: UICollectionViewController {
 
     } else if let records = records {
       for record in records {
-
-        let food = Food(name: record["Name"]!, quantity: record["Quantity"]!, expiration: record["Expiration"]!, image: "eggs", id: record.recordID.recordName)
-
-        collectionTest.append(food)
-
+        
+        let data = record["Expiration"]!
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX") // set locale to reliable US_POSIX
+        let date = dateFormatter.date(from:data as! String)!
+        let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day, .hour], from: date)
+        let finalDate = calendar.date(from:components)
+        
+        let diff = finalDate?.interval(ofComponent: .day, fromDate: currentDate as Date)
+        
+        if language == "it" {
+          let food = Food(name: record["Name"]!, quantity: record["Quantity"]!, expiration: "\(diff) days left", image: "icon-food", id: record.recordID.recordName)
+          collectionTest.append(food)
+        }
+        else {
+          let food = Food(name: record["Name"]!, quantity: record["Quantity"]!, expiration: "\(diff) giorni rimanenti", image: "icon-food", id: record.recordID.recordName)
+          collectionTest.append(food)
+        }
       }
 
       print(collectionTest.count)
@@ -142,4 +160,17 @@ class FoodCollectionViewController: UICollectionViewController {
   }
 
 
+}
+
+extension Date {
+  
+  func interval(ofComponent comp: Calendar.Component, fromDate date: Date) -> Int {
+    
+    let currentCalendar = Calendar.current
+    
+    guard let start = currentCalendar.ordinality(of: comp, in: .era, for: date) else { return 0 }
+    guard let end = currentCalendar.ordinality(of: comp, in: .era, for: self) else { return 0 }
+    
+    return end - start
+  }
 }
