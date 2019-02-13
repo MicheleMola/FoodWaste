@@ -98,7 +98,7 @@ class RecipesViewController: UIViewController {
         }
         
         
-        self.getRecipes()
+        self.getContent()
         
     }
     
